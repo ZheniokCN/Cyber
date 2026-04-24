@@ -1,4 +1,217 @@
-body{
+body {
     padding: 0;
     margin: 0;
+}
+
+.header {
+    margin: 0 auto;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 90%;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.disp-flex {
+    display: flex;
+    align-items: center;
+}
+
+.light-line {
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 20px 0 0;
+}
+
+.search {
+    padding: 5px 10px 5px 9px;
+    gap: 10px;
+    max-width: 560px;
+    background-color: #F1F1F1;
+    width: 100%;
+    border-radius: 5px;
+    color: #9F9F9F;
+}
+
+.header-aling {
+    justify-content: space-between;
+}
+
+.list-header {
+    gap: 60px;
+}
+
+.list-header li a,
+.icons li a {
+    color: #171717;
+}
+
+.icons {
+    gap: 25px;
+}
+
+.dark-line-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #2D2D2D;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.dark-line-list a {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.main-head {
+    display: flex;
+    gap: 3px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-family: "Fixel Display";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.head-part-1 {
+    font-weight: 200;
+}
+
+.head-part-2 {
+    font-weight: 500;
+}
+
+.text-info {
+    color: FFF;
+    align-items: center;
+    font-family: "Fixel Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.button a {
+    padding: 23px 62px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    max-width: 270px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.info {
+    align-items: center;
+    text-align: center;
+}
+
+.info p,
+.info h1,
+.info a {
+    color: #FFF;
+}
+
+.iphones-block {
+    margin: 0 auto;
+    min-height: 930px;
+    padding: 20px 0;
+    background: #f5f5f5 url(../img/background-iphone.webp) no-repeat center/cover;
+}
+.section {
+    align-items: center;
+}
+
+.section h2,
+.section .head-in-section {
+    text-transform: uppercase;
+    line-height: 45px;
+    font-size: 42px;
+    font-family: "Fixel Display";
+}
+
+.section .head-in-section {
+    font-weight: 200;
+}
+
+.playstation-section {
+    width: 50%;
+    min-height: 441px;
+    background-color: #FFFFFF;
+    margin: 0 ;
+    padding: 20px 0;
+    max-width: 1920px;
+}
+
+.airPods-secton {
+    width: 27%;
+    background-color: #F1F1F1;
+    min-height: 360px;
+    max-width: 1920px;
+}
+
+.apple-vision-section {
+    width: 23%;
+    max-width: 1920px;
+    background-color: #CACACA;
+    min-height: 360px;
+}
+
+.macbook-section {
+    width: 50%;
+    max-width: 1920px;
+    align-items: end;
+    background-color: #F1F1F1;
+    min-height: 800px;
+    padding: 20px 0;
+}
+.macbook-section .text-sec {
+    margin-bottom: 40px;
+}
+
+.macbook-head {
+    display: flex;
+    align-items: center;
+}
+
+.flex-sections {
+    display: flex;
+}
+
+.button-dark a {
+    padding: 23px 62px;
+    border-radius: 5px;
+    border: 1px solid #171717;
+    max-width: 270px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--text-color, #171717);
+    margin-top: 40px;
+}
+.text-sec {
+    font-size: 18px;
 }
