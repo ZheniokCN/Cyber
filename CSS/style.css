@@ -119,6 +119,7 @@ a {
     max-width: 270px;
     text-align: center;
     font-size: 30px;
+    color: #FFFFFF;
 }
 
 .button {
@@ -142,7 +143,100 @@ a {
     padding: 20px 0;
     background: #f5f5f5 url(../img/background-iphone.webp) no-repeat center/cover;
 }
+
 .section {
     align-items: center;
 }
 
+.buttons-list {
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.winter-sale {
+    text-transform: uppercase;
+    font-size: 72px;
+    color: #FFF;
+    margin: 0;
+}
+
+.span-winter-sale {
+    font-weight: 200;
+    font-family: "Fixel Display";
+}
+
+.winter-sale-section {
+    min-height: 500px;
+    background: #000000;
+}
+
+.head-winter-sale {
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.winter-sale-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.aling-winter-sale {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-winter-sale {
+    margin: 0;
+}
+
+.aling-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #171717;
+    color: #FFFFFF;
+}
+
+.text-footer {
+    max-width: 528px;
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.head-footer {
+    font-family: "Fixel Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.list-footer li{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.first-list-footer {
+    font-family: "Fixel Display";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.second-list-footer{
+    max-width: 319px;
+}
+.justify-center{
+    justify-content: space-between;
+}
