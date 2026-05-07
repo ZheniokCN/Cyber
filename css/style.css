@@ -23,6 +23,13 @@ ol {
     list-style: none;
 }
 
+li,
+ol,
+ul,
+div {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -30,6 +37,10 @@ a {
 .disp-flex {
     display: flex;
     align-items: center;
+}
+
+.disp-grid {
+    display: grid;
 }
 
 .light-line {
@@ -94,13 +105,19 @@ a {
     margin-bottom: 0;
 }
 
-.head-part-1 {
+.main-block h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.text-block {
+    font-size: 18px;
+}
+
+.part-of-head {
     font-weight: 200;
 }
 
-.head-part-2 {
-    font-weight: 500;
-}
 
 .text-info {
     color: FFF;
@@ -148,9 +165,18 @@ a {
     align-items: center;
 }
 
+.styles-for-head {
+    font-family: "Fixel Display";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .buttons-list {
     justify-content: center;
     gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .btn-grey {
@@ -159,18 +185,66 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 45px 84px;
     background-color: #F1F1F1;
     color: #171717;
-    max-width: 270px;
     min-height: 110px;
     display: block;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 270px;
+    display: grid;
+    text-align: center;
+    align-items: center;
 }
 
 .buttons-disp-block {
     display: block;
 }
 
+.ul-category-list {
+    display: flex;
+    max-width: 617px;
+    justify-content: space-between;
+}
+
+.items_list-category {
+    font-family: "Fixel Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.items_list-category-dark {
+    color: #171717;
+    text-decoration: underline;
+}
+
+.items_list-category-light {
+    color: #9F9F9F;
+}
+
+.figure {
+    max-width: 415px;
+    min-height: 580px;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+
+.btn_figures {
+    color: #FFF;
+    font-family: "Fixel Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #171717;
+    padding: 15px 75px;
+    min-height: 50px;
+    max-width: 250px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color, #171717);
+}
 
 .winter-sale {
     text-transform: uppercase;
@@ -212,6 +286,7 @@ a {
 .button-winter-sale {
     margin: 0;
 }
+
 
 .aling-items {
     display: flex;
