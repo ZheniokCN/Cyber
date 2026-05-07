@@ -153,6 +153,24 @@ a {
     gap: 20px;
 }
 
+.btn-grey {
+    font-family: "Fixel Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 45px 84px;
+    background-color: #F1F1F1;
+    color: #171717;
+    max-width: 270px;
+    min-height: 110px;
+    display: block;
+}
+
+.buttons-disp-block {
+    display: block;
+}
+
 
 .winter-sale {
     text-transform: uppercase;
@@ -223,7 +241,7 @@ a {
     line-height: normal;
 }
 
-.list-footer li{
+.list-footer li {
     font-size: 18px;
     font-weight: 400;
 }
@@ -234,9 +252,11 @@ a {
     font-weight: 400;
     line-height: normal;
 }
-.second-list-footer{
+
+.second-list-footer {
     max-width: 319px;
 }
-.justify-center{
+
+.justify-center {
     justify-content: space-between;
 }
