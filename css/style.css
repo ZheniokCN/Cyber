@@ -110,6 +110,28 @@ a {
     font-size: 42px;
 }
 
+.macbook-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.macbook-block h2 {
+    margin: 0;
+}
+
+.dark-btn {
+    color: var(--text-color, #171717);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 22px 62px 23px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color, #171717);
+}
+
 .text-block {
     font-size: 18px;
 }
@@ -231,7 +253,35 @@ a {
     border-radius: 5px;
 }
 
-.btn_figures {
+.text-and-button {
+    max-width: 359px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.text-and-button p,
+.text-and-button h3,
+.text-and-button a {
+    margin: 0;
+}
+
+.heads-figure {
+    font-family: "Fixel Display";
+    font-size: 24px;
+}
+
+.price {
+    font-size: 30px;
+}
+.btn_figures-block{
+    min-height: 50px;
+    min-height: 50px;
+    max-width: 250px;
+}
+
+.btn_figures{
     color: #FFF;
     font-family: "Fixel Display";
     font-size: 24px;
