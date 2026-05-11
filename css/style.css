@@ -1,0 +1,387 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    margin: 0 auto;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 90%;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+li,
+ol,
+ul,
+div {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.disp-flex {
+    display: flex;
+    align-items: center;
+}
+
+.disp-grid {
+    display: grid;
+}
+
+.light-line {
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 20px 0 0;
+}
+
+.search {
+    padding: 5px 10px 5px 9px;
+    gap: 10px;
+    max-width: 560px;
+    background-color: #F1F1F1;
+    width: 100%;
+    border-radius: 5px;
+    color: #9F9F9F;
+}
+
+.header-aling {
+    justify-content: space-between;
+}
+
+.list-header {
+    gap: 60px;
+}
+
+.list-header li a,
+.icons li a {
+    color: #171717;
+}
+
+.icons {
+    gap: 25px;
+}
+
+.dark-line-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #2D2D2D;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.dark-line-list a {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.main-head {
+    display: flex;
+    gap: 3px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-family: "Fixel Display";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.main-block h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.macbook-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.macbook-block h2 {
+    margin: 0;
+}
+
+.dark-btn {
+    color: var(--text-color, #171717);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 22px 62px 23px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color, #171717);
+}
+
+.text-block {
+    font-size: 18px;
+}
+
+.part-of-head {
+    font-weight: 200;
+}
+
+
+.text-info {
+    color: FFF;
+    align-items: center;
+    font-family: "Fixel Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.button a {
+    padding: 23px 62px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    max-width: 270px;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.info {
+    align-items: center;
+    text-align: center;
+}
+
+.info p,
+.info h1,
+.info a {
+    color: #FFF;
+}
+
+.iphones-block {
+    margin: 0 auto;
+    min-height: 930px;
+    padding: 20px 0;
+    background: #f5f5f5 url(../img/background-iphone.webp) no-repeat center/cover;
+}
+
+.section {
+    align-items: center;
+}
+
+.styles-for-head {
+    font-family: "Fixel Display";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.buttons-list {
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.btn-grey {
+    font-family: "Fixel Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #F1F1F1;
+    color: #171717;
+    min-height: 110px;
+    display: block;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 270px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.buttons-disp-block {
+    display: block;
+}
+
+.ul-category-list {
+    display: flex;
+    max-width: 617px;
+    justify-content: space-between;
+}
+
+.items_list-category {
+    font-family: "Fixel Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.items_list-category-dark {
+    color: #171717;
+    text-decoration: underline;
+}
+
+.items_list-category-light {
+    color: #9F9F9F;
+}
+
+.figure {
+    max-width: 415px;
+    min-height: 580px;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+
+.text-and-button {
+    max-width: 359px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.text-and-button p,
+.text-and-button h3,
+.text-and-button a {
+    margin: 0;
+}
+
+.heads-figure {
+    font-family: "Fixel Display";
+    font-size: 24px;
+}
+
+.price {
+    font-size: 30px;
+}
+.btn_figures-block{
+    min-height: 50px;
+    min-height: 50px;
+    max-width: 250px;
+}
+
+.btn_figures{
+    color: #FFF;
+    font-family: "Fixel Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #171717;
+    padding: 15px 75px;
+    min-height: 50px;
+    max-width: 250px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color, #171717);
+}
+
+.winter-sale {
+    text-transform: uppercase;
+    font-size: 72px;
+    color: #FFF;
+    margin: 0;
+}
+
+.span-winter-sale {
+    font-weight: 200;
+    font-family: "Fixel Display";
+}
+
+.winter-sale-section {
+    min-height: 500px;
+    background: #000000;
+}
+
+.head-winter-sale {
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.winter-sale-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.aling-winter-sale {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-winter-sale {
+    margin: 0;
+}
+
+
+.aling-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #171717;
+    color: #FFFFFF;
+}
+
+.text-footer {
+    max-width: 528px;
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.head-footer {
+    font-family: "Fixel Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.list-footer li {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.first-list-footer {
+    font-family: "Fixel Display";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.second-list-footer {
+    max-width: 319px;
+}
+
+.justify-center {
+    justify-content: space-between;
+}
