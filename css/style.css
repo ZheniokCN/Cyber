@@ -47,6 +47,7 @@ a {
     justify-content: space-between;
     background-color: #FFFFFF;
     padding: 20px 0 0;
+    align-items: center;
 }
 
 .search {
@@ -127,7 +128,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 22px 62px 23px;
+    padding: 13px 74px;
     border-radius: 5px;
     border: 1px solid var(--text-color, #171717);
 }
@@ -193,9 +194,13 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 0;
+    padding-bottom: 40px;
+    padding: 100px 0 40px 0;
 }
 
 .buttons-list {
+    padding: 0;
     justify-content: center;
     gap: 20px;
     grid-template-columns: repeat(6, 1fr);
@@ -227,6 +232,8 @@ a {
     display: flex;
     max-width: 617px;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .items_list-category {
@@ -246,11 +253,36 @@ a {
     color: #9F9F9F;
 }
 
+.figures_main-page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 37px 0 0 0;
+}
+
+.figures_main-page-second {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
 .figure {
+    margin: 0;
+    padding: 0;
     max-width: 415px;
     min-height: 580px;
     background-color: #F1F1F1;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-figure {
+    padding: 27px 0 0 0;
 }
 
 .text-and-button {
@@ -270,18 +302,43 @@ a {
 .heads-figure {
     font-family: "Fixel Display";
     font-size: 24px;
+    font-weight: 500;
+}
+
+.price-bl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .price {
     font-size: 30px;
+    font-weight: 700;
 }
-.btn_figures-block{
+
+.discount {
+    color: var(--gray-middle, #9F9F9F);
+    text-decoration: line-through;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-and-button {
+    display: flex;
+    width: 359px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn_figures-block {
     min-height: 50px;
     min-height: 50px;
     max-width: 250px;
 }
 
-.btn_figures{
+.btn_figures {
     color: #FFF;
     font-family: "Fixel Display";
     font-size: 24px;
@@ -289,11 +346,12 @@ a {
     font-weight: 400;
     line-height: normal;
     background-color: #171717;
-    padding: 15px 75px;
+    padding: 11px 80px;
     min-height: 50px;
     max-width: 250px;
     border-radius: 5px;
     border: 1px solid var(--text-color, #171717);
+    text-align: center;
 }
 
 .winter-sale {
@@ -309,8 +367,7 @@ a {
 }
 
 .winter-sale-section {
-    min-height: 500px;
-    background: #000000;
+    background: radial-gradient(109.45% 50% at 50% 50%, #000 0%, #282828 100%);
 }
 
 .head-winter-sale {
@@ -327,6 +384,7 @@ a {
 }
 
 .aling-winter-sale {
+    min-height: 500px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -342,6 +400,23 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.margin-none {
+    margin: 0;
+}
+
+.aling-items-foot {
+    display: flex;
+    align-items: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.empty {
+    min-height: 96px;
 }
 
 .footer {
@@ -364,6 +439,9 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .list-footer li {
@@ -376,12 +454,59 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    min-height: 174px;
 }
 
 .second-list-footer {
     max-width: 319px;
+    min-height: 174px;
+}
+
+.images-footer {
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.link a {
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: #FFFFFF;
+}
+
+.text-bottom-foot {
+    color: #FFFFFF;
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.text-bottom-foot-bl{
+    width: 100%;
+    padding-bottom: 39px;
 }
 
 .justify-center {
     justify-content: space-between;
+}
+
+.item-foot {
+    color: var(--gray-middle, #9F9F9F);
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.for-padding {
+    padding: 40px 0 0 0;
 }
