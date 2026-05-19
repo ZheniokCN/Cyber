@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Fixel Display';
+    font-family: "Fixel Display";
     src: url("../fonts/'FixelDisplay-Medium.woff2'") format('woff2'),
         url("../fonts/'FixelDisplay-Medium.woff'") format('woff'),
         url("../fonts/'FixelDisplay-Medium.ttf'") format('truetype');
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: 'Fixel Display';
+    font-family: "Fixel Display";
     src: url("../fonts/'FixelDisplay-Bold.woff2'") format('woff2'),
         url("../fonts/'FixelDisplay-Bold.woff'") format('woff'),
         url("../fonts/'FixelDisplay-Bold.ttf'") format('truetype');
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    font-family: 'Fixel Display';
+    font-family: "Fixel Display";
     src: url("../fonts/'FixelDisplay-Regular.woff2'") format('woff2'),
         url("../fonts/'FixelDisplay-Regular.woff'") format('woff'),
         url("../fonts/'FixelDisplay-Regular.ttf'") format('truetype');
@@ -27,10 +27,11 @@
     font-style: normal;
     font-display: swap;
 }
+
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Fixel Display';
+    font-family: "Fixel Display";
 }
 
 .header {
@@ -56,7 +57,8 @@ ol {
 li,
 ol,
 ul,
-div {
+div,
+h3 {
     margin: 0;
 }
 
@@ -81,12 +83,6 @@ a {
 }
 
 .search {
-    padding: 5px 10px 5px 9px;
-    gap: 10px;
-    max-width: 560px;
-    background-color: #F1F1F1;
-    width: 100%;
-    border-radius: 5px;
     color: #9F9F9F;
 }
 
@@ -174,7 +170,6 @@ a {
 .text-info {
     color: FFF;
     align-items: center;
-    font-family: "Fixel Display";
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -218,7 +213,6 @@ a {
 }
 
 .styles-for-head {
-    font-family: "Fixel Display";
     font-size: 42px;
     font-style: normal;
     font-weight: 500;
@@ -236,7 +230,6 @@ a {
 }
 
 .btn-grey {
-    font-family: "Fixel Display";
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -266,7 +259,6 @@ a {
 }
 
 .items_list-category {
-    font-family: "Fixel Display";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -301,24 +293,32 @@ a {
 .figure {
     margin: 0;
     padding: 0;
-    max-width: 415px;
-    min-height: 580px;
     background-color: #F1F1F1;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
+}
+
+.column-space-beetwen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding: 0 0 38px;
 }
 
 .img-figure {
     padding: 27px 0 0 0;
+    margin: 0;
 }
 
-.text-and-button {
-    max-width: 359px;
+.price-and-button {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     text-align: center;
 }
 
@@ -329,7 +329,6 @@ a {
 }
 
 .heads-figure {
-    font-family: "Fixel Display";
     font-size: 24px;
     font-weight: 500;
 }
@@ -343,6 +342,7 @@ a {
 .price {
     font-size: 30px;
     font-weight: 700;
+    margin: 0;
 }
 
 .discount {
@@ -353,34 +353,24 @@ a {
     font-weight: 400;
 }
 
-.text-and-button {
+.price-and-button {
     display: flex;
-    width: 359px;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-}
-
-.btn_figures-block {
-    min-height: 50px;
-    min-height: 50px;
-    max-width: 250px;
 }
 
 .btn_figures {
     color: #FFF;
-    font-family: "Fixel Display";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     background-color: #171717;
     padding: 11px 80px;
-    min-height: 50px;
-    max-width: 250px;
     border-radius: 5px;
     border: 1px solid var(--text-color, #171717);
     text-align: center;
+    display: block;
 }
 
 .winter-sale {
@@ -392,7 +382,6 @@ a {
 
 .span-winter-sale {
     font-weight: 200;
-    font-family: "Fixel Display";
 }
 
 .winter-sale-section {
@@ -455,7 +444,6 @@ a {
 
 .text-footer {
     max-width: 528px;
-    font-family: "Fixel Display";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -463,7 +451,6 @@ a {
 }
 
 .head-footer {
-    font-family: "Fixel Display";
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -479,7 +466,6 @@ a {
 }
 
 .first-list-footer {
-    font-family: "Fixel Display";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -498,7 +484,6 @@ a {
 }
 
 .link a {
-    font-family: "Fixel Display";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -510,7 +495,6 @@ a {
 
 .text-bottom-foot {
     color: #FFFFFF;
-    font-family: "Fixel Display";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -518,7 +502,7 @@ a {
     text-align: center;
 }
 
-.text-bottom-foot-bl{
+.text-bottom-foot-bl {
     width: 100%;
     padding-bottom: 39px;
 }
@@ -529,7 +513,6 @@ a {
 
 .item-foot {
     color: var(--gray-middle, #9F9F9F);
-    font-family: "Fixel Display";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -538,4 +521,34 @@ a {
 
 .for-padding {
     padding: 40px 0 0 0;
+}
+
+.active-page {
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    padding: 20px 0 32px;
+}
+
+.active-page-div{
+    gap: 16px;
+    display: inline-flex;
+}
+
+.active-page .grey-sp {
+    color: #9F9F9F;
+    font-weight: 400;
+}
+
+.active-page .dark-sp {
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.img_about-us{
+    max-width: 870px;
 }
