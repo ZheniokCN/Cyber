@@ -132,8 +132,12 @@ a {
 }
 
 .img-bl {
-    position: absolute;
-    bottom: -5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .main-block h2 {
@@ -209,9 +213,8 @@ a {
 .iphones-block {
     margin: 0 auto;
     min-height: 930px;
-    padding: 20px 0;
+    padding: 0;
     background: var(--text-color, #171717);
-    position: relative;
 }
 
 .section {
@@ -232,14 +235,12 @@ a {
     grid-row: 1 / 3;
     align-items: start;
     justify-content: center;
-    position: relative;
 }
 
 .plastation-five {
     display: flex;
     justify-content: end;
     align-items: center;
-    position: relative;
     background: #FFF;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
@@ -259,23 +260,18 @@ a {
 }
 
 .mcb-img {
-    position: absolute;
     right: 0;
 }
 
 .img-pl {
-    position: absolute;
     left: 0;
 }
 
 .img-ap {
-    position: absolute;
     left: 0;
-    bottom: 0;
 }
 
 .img-a-v{
-    position: absolute;
     left: 0;
     bottom: 92px;
 }
@@ -287,7 +283,6 @@ a {
 .apple-airpods-block {
     grid-column: 1/2;
     background: #F1F1F1;
-    position: relative;
 }
 
 .text-airpods {
@@ -305,7 +300,6 @@ a {
 .apl-vision-block {
     background: #CACACA;
     grid-column: 2/3;
-    position: relative;
     align-items: center;
 }
 
