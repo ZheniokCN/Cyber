@@ -13,10 +13,12 @@
         <nav class="wrapper">
             <div class="for-aling-items">
                 <div class="light-line disp-flex">
-                    <picture class="logo logo-header">
-                        <source srcset type="logo-cyber-header.png">
-                        <img src="img/logo-cyber-header.webp" alt="logo">
-                    </picture>
+                    <a href="/">
+                        <picture class="logo logo-header">
+                            <source srcset type="logo-cyber-header.png">
+                            <img src="img/logo-cyber-header.webp" alt="logo">
+                        </picture>
+                    </a>
                     <div class="search disp-flex">
                         <picture>
                             <source srcset type="img/search.svg">
@@ -65,11 +67,25 @@
                     <a href="#" class="btn">Shop now</a>
                 </div>
             </div>
+            <div class="disp-flex">
+                <div class="img-bl">
+                    <img src="img/bg-iphones.webp" alt="iphones">
+                </div>
+            </div>
         </section>
-
         <div class="main-block">
-            <div>
-                <div class="macbook-block">
+            <div class="plastation-five">
+                <div class="ps-text">
+                    <h2>Playstation 5</h2>
+                    <p class="text-block">Incredibly powerful CPUs, and an SSD with integrated I/O will redefine your
+                        PlayStation experience.</p>
+                </div>
+            </div>
+            <div class="img-pl">
+                <img src="img/playtstation-5.png" alt="pl5">
+            </div>
+            <div class="macbook-block">
+                <div class="for-text">
                     <div>
                         <h2><span class="part-of-head">Macbook</span> air</h2>
                     </div>
@@ -80,29 +96,36 @@
                         <a href="#" class="dark-btn">Shop now</a>
                     </div>
                 </div>
+                <div class="mcb-img">
+                    <img src="img/macbook_air.png" alt="macbook-air">
+                </div>
             </div>
-            <div class="plastation-5">
-                <h2>Plastion 5</h2>
-                <p class="text-block">Incredibly powerful CPUs, and an SSD with integrated I/O will redefine your
-                    PlayStation experience.</p>
-                <div class="disp_flex">
-                    <div class="apple-airpods-block">
-                        <div>
-                            <h2><span class="part-of-head">apple</span> AirPods max</h2>
-                        </div>
+            <div class="apple-airpods-block">
+                <div class="for-align">
+                    <div class="text-airpods">
+                        <h2><span class="part-of-head">apple</span> AirPods max</h2>
                         <p class="text-block">Computational audio. Listen, it’s powerful.</p>
                     </div>
-                    <div class="apl-vision-block">
+                </div>
+                <div class="img-ap">
+                    <img src="img/apple-airpods-max.png" alt="airpods">
+                </div>
+            </div>
+            <div class="apl-vision-block">
+                <div class="for-align">
+                    <div class="text-apl-vision">
                         <div>
-                            <h2><span class="part-of-head">Macbook</span> vision pro</h2>
+                            <h2><span class="part-of-head">apple</span> vision pro</h2>
                         </div>
                         <p class="text-block">An immersive way to experience entertainment.</p>
                     </div>
                 </div>
+                <div class="img-a-v">
+                    <img src="img/apple-vision-pro.png" alt="apple-vision-pro">
+                </div>
             </div>
         </div>
-        <nav class="wrapper">
-
+        <div class="wrapper">
             <div class="button-block">
                 <h2 class="styles-for-head">Browse By Category</h2>
                 <div class="buttons-disp-block">
@@ -225,7 +248,8 @@
                 <figure class="figure">
                     <figcaption class="column-space-beetwen">
                         <div>
-                            <img class="img-figure" src="img/apple-airpods-max-2-card.png" alt="apple-AirPods-Max-2" href="#">
+                            <img class="img-figure" src="img/apple-airpods-max-2-card.png" alt="apple-AirPods-Max-2"
+                                href="#">
                             <h3 class="heads_figure">Навушники Apple AirPods Max 2</h3>
                         </div>
                         <div class="price-and-button">
@@ -241,60 +265,80 @@
                 <h2 class="styles-for-head">Discounts up to -50%</h2>
                 <div class="figures_main-page-second">
                     <figure class="figure">
-                        <img src="img/iphone-13-pro-card.png" alt="iPhone-13" href="#">
-                        <div class="price-and-button">
-                            <h3 class="heads_figure">Смартфон iPhone 13 Pro <br> 128GB</h3>
-                            <div class="price-bl">
-                                <p class="price"><b>$ 300</b></p>
-                                <p class="discount">$ 600</p>
+                        <figcaption class="column-space-beetwen">
+                            <div>
+                                <img src="img/iphone-13-pro-card.png" alt="iPhone-13" href="#">
+                                <h3 class="heads_figure">Смартфон iPhone 13 Pro 128GB</h3>
                             </div>
-                            <div class="for-aling">
-                                <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a></div>
+                            <div class="price-and-button">
+                                <div class="price-bl">
+                                    <p class="price"><b>$ 300</b></p>
+                                    <p class="discount">$ 600</p>
+                                </div>
+                                <div class="for-aling">
+                                    <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </figure>
                     <figure class="figure">
-                        <img src="img/starlink.png" alt="starlink" href="#">
-                        <div class="price-and-button">
-                            <h3 class="heads_figure">Супутниковий модем Starlink Internet Satellite</h3>
-                            <div class="price-bl">
-                                <p class="price"><b>$ 550</b></p>
-                                <p class="discount">$ 1100</p>
+                        <figcaption class="column-space-beetwen">
+                            <div>
+                                <img src="img/starlink.png" alt="starlink" href="#">
+                                <h3 class="heads_figure">Супутниковий модем Starlink Internet Satellite</h3>
                             </div>
-                            <div class="for-aling">
-                                <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a></div>
+                            <div class="price-and-button">
+                                <div class="price-bl">
+                                    <p class="price"><b>$ 550</b></p>
+                                    <p class="discount">$ 1100</p>
+                                </div>
+                                <div class="for-aling">
+                                    <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </figure>
                     <figure class="figure ">
-                        <img src="img/ps-5-pro.png" alt="ps-5-pro" href="#">
-                        <div class="price-and-button">
-                            <h3 class="heads_figure">Ігрова приставка Sony PlayStation <br> 5 Pro</h3>
-                            <div class="price-bl">
-                                <p class="price"><b>$ 600</b></p>
-                                <p class="discount">$ 1200</p>
+                        <figcaption class="column-space-beetwen">
+                            <div>
+                                <img src="img/ps-5-pro.png" alt="ps-5-pro" href="#">
+                                <h3 class="heads_figure">Ігрова приставка Sony PlayStation 5 Pro</h3>
                             </div>
-                            <div class="for-aling">
-                                <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a></div>
+                            <div class="price-and-button">
+                                <div class="price-bl">
+                                    <p class="price"><b>$ 600</b></p>
+                                    <p class="discount">$ 1200</p>
+                                </div>
+                                <div class="for-aling">
+                                    <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </figure>
                     <figure class="figure">
-                        <img src="img/flesh.png" alt="flesh-cart" href="#">
-                        <div class="price-and-button">
-                            <h3 class="heads_figure">Флеш-накопичувач SanDisk USB 3.1 iXpand Luxe</h3>
-                            <div class="price-bl">
-                                <p class="price"><b>$ 30</b></p>
-                                <p class="discount">$ 60</p>
+                        <figcaption class="column-space-beetwen">
+                            <div>
+                                <img src="img/flesh.png" alt="flesh-cart" href="#">
+                                <h3 class="heads_figure">Флеш-накопичувач SanDisk USB 3.1 iXpand Luxe</h3>
                             </div>
-                            <div class="for-aling">
-                                <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a></div>
+                            <div class="price-and-button">
+                                <div class="price-bl">
+                                    <p class="price"><b>$ 30</b></p>
+                                    <p class="discount">$ 60</p>
+                                </div>
+                                <div class="for-aling">
+                                    <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </figure>
                 </div>
             </div>
-        </nav>
+        </div>
         <section class="winter-sale-section">
             <div class="disp-flex aling-winter-sale">
                 <div class="winter-sale-block">
@@ -314,10 +358,12 @@
             <div>
                 <div class="disp-flex justify-center for-padding">
                     <div>
-                        <picture>
-                            <source srcset type="img/logo-cyber-footer.png">
-                            <img src="img/logo-cyber-footer.webp" alt="logo">
-                        </picture>
+                        <a href="/">
+                            <picture>
+                                <source srcset type="img/logo-cyber-footer.png">
+                                <img src="img/logo-cyber-footer.webp" alt="logo">
+                            </picture>
+                        </a>
                         <p class="text-footer item-foot">We are a residential interior design firm located in Ukraine.
                             Our
                             boutique-studio offers more than 1000 devices.</p>
