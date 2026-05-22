@@ -94,9 +94,17 @@ a {
     gap: 60px;
 }
 
+.list-header li{
+    transition: 0.4s;
+}
+
 .list-header li a,
 .icons li a {
     color: #171717;
+}
+
+.list-header li:hover{
+    transform: scale(1.1);
 }
 
 .icons {
@@ -111,6 +119,14 @@ a {
     background-color: #2D2D2D;
     padding: 20px 0;
     margin: 0 auto;
+}
+
+.dark-line-list li{
+    transition: 0.4s;
+}
+
+.dark-line-list li:hover {
+    transform: scale(1.1);
 }
 
 .dark-line-list a {
@@ -244,6 +260,7 @@ a {
 }
 
 .plastation-five {
+    padding: 30px 30px 30px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -258,23 +275,20 @@ a {
 }
 
 .apple-airpods-block {
+    padding: 30px 30px 30px 0;
     grid-column: 1/2;
     background: #F1F1F1;
-}
-
-.text-airpods {
-    max-width: 348px;
-}
-
-.for-align {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .apl-vision-block {
+    display: flex;
+    padding: 30px 30px 30px 0;
+    flex-direction: row;
+    justify-content: space-between;
     background: #CACACA;
     grid-column: 2/3;
     align-items: center;
@@ -313,6 +327,12 @@ a {
     display: grid;
     text-align: center;
     align-items: center;
+    transition: 0.4s;
+}
+
+.btn-grey:hover{
+    background-color: #171717;
+    color: #F1F1F1;
 }
 
 .buttons-disp-block {
@@ -368,6 +388,11 @@ a {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    transition: 0.4s;
+}
+
+.figure:hover{
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .column-space-beetwen {
@@ -398,7 +423,7 @@ a {
     margin: 0;
 }
 
-.heads-figure {
+.heads_figure {
     font-size: 24px;
     font-weight: 500;
 }
@@ -430,6 +455,8 @@ a {
 }
 
 .btn_figures {
+    margin: 0;
+    border: 2px solid  transparent;
     color: #FFF;
     font-size: 24px;
     font-style: normal;
@@ -441,6 +468,14 @@ a {
     border: 1px solid var(--text-color, #171717);
     text-align: center;
     display: block;
+    transition: 0.4s;
+}
+
+.btn_figures:hover{
+    transform: scale(1.03);
+    border: 2px solid #000;
+    background: #FFF;
+    color: #171717;
 }
 
 .winter-sale {
