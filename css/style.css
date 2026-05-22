@@ -211,6 +211,9 @@ a {
 }
 
 .iphones-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     min-height: 930px;
     padding: 0;
@@ -230,50 +233,24 @@ a {
 }
 
 .macbook-block {
+    padding: 30px 0 30px 30px;
     background: var(--ligh-gray, #F1F1F1);
     grid-column: 3 / 5;
     grid-row: 1 / 3;
-    align-items: start;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .plastation-five {
     display: flex;
-    justify-content: end;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background: #FFF;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-}
-
-.ps-text {
-    max-width: 493px;
-    padding: 0 77px 0 0;
-}
-
-.for-text {
-    padding: 0 0 0 67px;
-    max-width: 419px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.mcb-img {
-    right: 0;
-}
-
-.img-pl {
-    left: 0;
-}
-
-.img-ap {
-    left: 0;
-}
-
-.img-a-v{
-    left: 0;
-    bottom: 92px;
 }
 
 .text-apl-vision{
