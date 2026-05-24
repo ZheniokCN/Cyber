@@ -82,12 +82,41 @@ a {
 .light-line {
     justify-content: space-between;
     background-color: #FFFFFF;
-    padding: 20px 0 0;
+    padding: 20px 0;
+    display: flex;
     align-items: center;
 }
 
 .search {
+    gap: 10px;
     color: #9F9F9F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 50px;
+}
+
+.gap-forty{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.svg-rotate{
+    transition: 0.4s;
+}
+
+.svg-rotate:hover{
+    transform: rotate(180deg);
+}
+
+.svg{
+    transition: 0.4s;
+}
+
+.svg:hover{
+    padding-bottom: 3px;
+    transform: scale(1.1);
 }
 
 .header-aling {
@@ -115,25 +144,33 @@ a {
     gap: 25px;
 }
 
+.dark-line{
+    background-color: #2D2D2D;
+    padding: 25px 0;
+}
+
 .dark-line-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background-color: #2D2D2D;
-    padding: 20px 0;
     margin: 0 auto;
 }
 
 .dark-line-list li{
     transition: 0.4s;
+    padding: 0 50px;
 }
 
 .dark-line-list li:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .dark-line-list a {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
     color: #FFFFFF;
     text-align: center;
 }
@@ -171,11 +208,19 @@ a {
     gap: 20px;
 }
 
+.for-text{
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+}
+
 .macbook-block h2 {
     margin: 0;
 }
 
 .dark-btn {
+    max-width: 270px;
+    display: block;
     color: var(--text-color, #171717);
     text-align: center;
     font-size: 30px;
@@ -185,6 +230,13 @@ a {
     padding: 13px 74px;
     border-radius: 5px;
     border: 1px solid var(--text-color, #171717);
+    transition: 0.4s;
+}
+
+.dark-btn:hover {
+    border: 1px solid transparent;
+    background-color:  var(--text-color, #171717);
+    color: #f1f1f1;
 }
 
 .text-block {
@@ -206,6 +258,7 @@ a {
 }
 
 .button a {
+    display: block;
     padding: 23px 62px;
     border-radius: 5px;
     border: 1px solid #FFF;
@@ -213,15 +266,22 @@ a {
     text-align: center;
     font-size: 30px;
     color: #FFFFFF;
+    margin: 0 auto;
+    transition: 0.4s;
 }
 
-.button {
-    margin-top: 50px;
+.button a:hover{
+    color: #000;
+    border: 1px solid #FFF;
+    background-color: #fff;
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 50px;
 }
 
 .info p,
@@ -231,12 +291,12 @@ a {
 }
 
 .iphones-block {
+    padding: 100px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    min-height: 930px;
-    padding: 0;
+    min-height: 830px;
     background: var(--text-color, #171717);
 }
 
@@ -351,20 +411,19 @@ a {
     padding: 0;
 }
 
-.items_list-category {
+.items_list-category a{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.items_list-category-dark {
-    color: #171717;
-    text-decoration: underline;
-}
-
-.items_list-category-light {
     color: #9F9F9F;
+    transition: 0.4s;
+    border-bottom: 2px solid transparent;
+}
+
+.items_list-category a:hover {
+    color: #171717;
+    border-bottom: 2px solid #000;
 }
 
 .figures_main-page {
@@ -385,7 +444,7 @@ a {
 
 .figure {
     margin: 0;
-    padding: 0;
+    padding: 24px;
     background-color: #F1F1F1;
     border-radius: 5px;
     display: flex;
@@ -406,7 +465,7 @@ a {
     align-items: center;
     margin: 0;
     padding: 0;
-    padding: 0 0 38px;
+    padding: 0;
     height: 100%;
 }
 
@@ -469,7 +528,6 @@ a {
     background-color: #171717;
     padding: 11px 80px;
     border-radius: 5px;
-    border: 1px solid var(--text-color, #171717);
     text-align: center;
     display: block;
     transition: 0.4s;
@@ -552,6 +610,7 @@ a {
 }
 
 .text-footer {
+    padding: 29px 0 50px;
     max-width: 528px;
     font-size: 18px;
     font-style: normal;
@@ -569,12 +628,19 @@ a {
     gap: 24px;
 }
 
+.list-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .list-footer li {
     font-size: 18px;
     font-weight: 400;
 }
 
 .first-list-footer {
+    padding: 0;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -582,6 +648,7 @@ a {
 }
 
 .second-list-footer {
+    padding: 0;
     max-width: 319px;
     min-height: 174px;
 }
@@ -590,6 +657,10 @@ a {
     gap: 30px;
     padding: 0;
     margin: 0;
+}
+
+.link{
+    padding: 25px 0;
 }
 
 .link a {
