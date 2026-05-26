@@ -227,7 +227,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 13px 74px;
+    padding: 12px 74px;
     border-radius: 5px;
     border: 1px solid var(--text-color, #171717);
     transition: 0.4s;
@@ -259,7 +259,7 @@ a {
 
 .button a {
     display: block;
-    padding: 23px 62px;
+    padding: 12px 62px;
     border-radius: 5px;
     border: 1px solid #FFF;
     max-width: 270px;
@@ -526,7 +526,7 @@ a {
     font-weight: 400;
     line-height: normal;
     background-color: #171717;
-    padding: 11px 80px;
+    padding: 7px 80px;
     border-radius: 5px;
     text-align: center;
     display: block;
