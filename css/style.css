@@ -466,7 +466,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin: 0;
     padding: 0;
     padding: 0;
@@ -478,16 +477,23 @@ a {
     margin: 0;
 }
 
+.btn_figures-block{
+    width: 100%;
+    display: block;
+}
 .price-and-button {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 .text-and-button p,
 .text-and-button h3,
 .text-and-button a {
     margin: 0;
+}
+
+.img-figure, .for-img-scale{
+    width: 100%;
 }
 
 .heads_figure {
@@ -499,6 +505,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
 }
 
 .price {
@@ -520,22 +527,23 @@ a {
 .price-and-button {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .btn_figures {
     margin: 0;
-    border: 2px solid  transparent;
+    border: 2px solid transparent;
     color: #FFF;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     background-color: #171717;
-    padding: 7px 80px;
-    border-radius: 5px;
-    text-align: center;
     display: block;
+    padding: 7px 20px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    margin: 0 auto;
     transition: 0.4s;
 }
 
@@ -763,4 +771,13 @@ a {
 
 .img_about-us {
     max-width: 870px;
+}
+
+.socials{
+    transition: 0.4s;
+}
+
+.socials:hover{
+    transform: scale(1.05);
+    padding-bottom: 5px;
 }
