@@ -721,12 +721,38 @@ a {
     font-weight: 400;
 }
 
+.dark-sp, .grey-sp{
+    transition: 0.4s;
+}
+
+.grey-sp a{
+    color: #9F9F9F;
+    font-weight: 400;
+}
+
+.grey-sp:hover{
+    transform: scale(1.06);
+}
+
 .active-page .dark-sp {
     font-family: "Fixel Display";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.dark-sp a{
+    font-family: "Fixel Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #171717;
+}
+
+.dark-sp:hover{
+    transform: scale(1.06);
 }
 
 .img_about-us {
