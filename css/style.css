@@ -320,10 +320,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
     flex-direction: row;
 }
 
 .plastation-five {
+    gap: 15px;
     padding: 30px 30px 30px 0;
     display: flex;
     flex-direction: row;
@@ -349,6 +351,7 @@ a {
 }
 
 .apl-vision-block {
+    gap: 15px;
     display: flex;
     padding: 30px 30px 30px 0;
     flex-direction: row;
@@ -360,6 +363,7 @@ a {
 
 
 .styles-for-head {
+    gap: 15px;
     font-size: 42px;
     font-style: normal;
     font-weight: 500;
@@ -444,7 +448,7 @@ a {
 
 .figure {
     margin: 0;
-    padding: 24px;
+    padding: 28px 24px 38px;
     background-color: #F1F1F1;
     border-radius: 5px;
     display: flex;
