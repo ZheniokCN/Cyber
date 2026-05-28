@@ -159,14 +159,17 @@ a {
 
 .dark-line-list li{
     transition: 0.4s;
-    padding: 0 50px;
 }
 
 .dark-line-list li:hover {
     transform: scale(1.05);
 }
 
-.dark-line-list a {
+.dark-line-list li a{
+    color: #FFF;
+}
+
+.dark-line-list li {
     display: flex;
     gap: 10px;
     flex-direction: row;
@@ -194,7 +197,7 @@ a {
     justify-content: center;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 60px 0 0;
 }
 
 .main-block h2 {
@@ -255,6 +258,10 @@ a {
     font-style: normal;
     font-weight: 400;
     margin-top: 0;
+}
+
+.button-iphones a{
+    margin: 0;
 }
 
 .button a {
@@ -472,11 +479,6 @@ a {
     height: 100%;
 }
 
-.img-figure {
-    padding: 27px 0 0 0;
-    margin: 0;
-}
-
 .btn_figures-block{
     width: 100%;
     display: block;
@@ -494,6 +496,8 @@ a {
 
 .img-figure, .for-img-scale{
     width: 100%;
+    margin: 0;
+    max-height: 340px;
 }
 
 .heads_figure {
@@ -530,6 +534,7 @@ a {
 }
 
 .btn_figures {
+    box-sizing: border-box;
     margin: 0;
     border: 2px solid transparent;
     color: #FFF;
@@ -566,11 +571,20 @@ a {
 }
 
 .winter-sale-section {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 96px;
     background: radial-gradient(109.45% 50% at 50% 50%, #000 0%, #282828 100%);
 }
 
-.head-winter-sale {
+.img-winter-sale{
+    min-height: 100%;
+    display: flex;
     align-items: center;
+}
+
+.head-winter-sale {
     display: flex;
     text-align: center;
 }
@@ -586,7 +600,6 @@ a {
     min-height: 500px;
     display: flex;
     text-align: center;
-    align-items: center;
     justify-content: center;
 }
 
@@ -612,10 +625,6 @@ a {
 
 .text-left {
     text-align: left;
-}
-
-.empty {
-    min-height: 96px;
 }
 
 .footer {
@@ -705,12 +714,18 @@ a {
     justify-content: space-between;
 }
 
-.item-foot {
+.item-foot a{
+    border-bottom: solid 3px transparent;
     color: var(--gray-middle, #9F9F9F);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: 0.4s;
+}
+
+.item-foot a:hover{
+    border-bottom: solid 2px var(--gray-middle, #9F9F9F);
 }
 
 .for-padding {
@@ -773,11 +788,10 @@ a {
     max-width: 870px;
 }
 
-.socials{
+.socials img{
     transition: 0.4s;
 }
 
-.socials:hover{
-    transform: scale(1.05);
-    padding-bottom: 5px;
+.socials img:hover{
+    transform: scale(1.25);
 }
