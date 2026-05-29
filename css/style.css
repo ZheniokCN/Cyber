@@ -1,5 +1,15 @@
 @font-face {
     font-family: "Fixel Display";
+    src: url("../fonts/FixelDisplay-Thin.woff2") format('woff2'),
+        url("../fonts/FixelDisplay-Thin.woff") format('woff'),
+        url("../fonts/FixelDisplay-Thin.ttf") format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fixel Display";
     src: url("../fonts/FixelDisplay-Medium.woff2") format('woff2'),
         url("../fonts/FixelDisplay-Medium.woff") format('woff'),
         url("../fonts/FixelDisplay-Medium.ttf") format('truetype');
