@@ -189,16 +189,15 @@ a {
 }
 
 .main-head {
-    display: flex;
-    gap: 3px;
+    font-weight: 200;
     text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
     font-style: normal;
     font-size: 72px;
-    font-style: normal;
-    font-weight: 200;
     margin-bottom: 0;
+}
+
+.part-of-head{
+    font-weight: 500;
 }
 
 .img-bl {
@@ -255,11 +254,6 @@ a {
 .text-block {
     font-size: 18px;
 }
-
-.part-of-head {
-    font-weight: 200;
-}
-
 
 .text-info {
     color: FFF;
@@ -447,6 +441,11 @@ a {
     border-bottom: 2px solid #000;
 }
 
+.items_list-category-dark a{
+    color: #171717;
+    border-bottom: 2px solid #000;
+}
+
 .figures_main-page {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -617,6 +616,11 @@ a {
     margin: 0;
 }
 
+.iphones-winter-sale{
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
 
 .aling-items {
     display: flex;
