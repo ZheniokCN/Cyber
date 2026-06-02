@@ -43,9 +43,13 @@
 }
 
 body {
+    cursor: url(../img/phone.cur), auto;
     padding: 0;
     margin: 0;
     font-family: "Fixel Display";
+}
+a {
+    cursor: url(../img/click.cur), default;
 }
 
 .header {
