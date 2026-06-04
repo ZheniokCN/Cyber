@@ -48,6 +48,7 @@ body {
     margin: 0;
     font-family: "Fixel Display";
 }
+
 a {
     cursor: url(../img/click.cur), default;
 }
@@ -87,6 +88,10 @@ a {
 .disp-flex {
     display: flex;
     align-items: center;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
 }
 
 .disp-grid {
@@ -171,25 +176,19 @@ a {
     margin: 0 auto;
 }
 
-.dark-line-list li {
-    transition: 0.4s;
-}
-
-.dark-line-list li:hover {
-    transform: scale(1.05);
-}
-
 .dark-line-list li a {
+    transition: 0.4s;
     color: #FFF;
-}
-
-.dark-line-list li {
     display: flex;
     gap: 10px;
     flex-direction: row;
     align-items: center;
     color: #FFFFFF;
     text-align: center;
+}
+
+.dark-line-list a:hover {
+    transform: scale(1.05);
 }
 
 .main-head {
@@ -204,7 +203,36 @@ a {
     font-weight: 500;
 }
 
+.block-for-shadow{
+    position: relative;
+}
+
+.shadow{
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    min-width: 596px;
+    min-height: 554px;
+    bottom: -10%;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.orange{
+    right: 45%;
+    background: #DB7A47;
+    box-shadow: 0 0 90px 100px #DB7A47;
+}
+
+.grey{
+    left: 45%;
+    background: #DCDCDA;
+    box-shadow: 0 0 90px 100px #DCDCDA;
+}
+
 .img-bl {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -813,9 +841,6 @@ a {
     transform: scale(1.06);
 }
 
-.img_about-us {
-    max-width: 870px;
-}
 
 .socials img {
     transition: 0.4s;
@@ -827,11 +852,22 @@ a {
 
 /* about us */
 
+.img-text{
+    gap: 20px;
+}
+
+.img_about-us {
+    max-width: 870px;
+    width: 100%;
+}
+
 .head-and-reasons {
     padding: 101px 0 104px;
 }
 
 .head-and-reasons h2 {
+    max-width: 410px;
+    margin: 0 auto;
     font-size: 42px;
     font-style: normal;
     font-weight: 500;
@@ -839,7 +875,6 @@ a {
 }
 
 .text_and_head {
-    padding-left: 71px;
     max-width: 742px;
     width: 100%;
 }
