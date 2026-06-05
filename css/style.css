@@ -40,6 +40,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -89,7 +90,8 @@ a {
     display: flex;
     align-items: center;
 }
-.space-between{
+
+.space-between {
     display: flex;
     justify-content: space-between;
 }
@@ -203,11 +205,11 @@ a {
     font-weight: 500;
 }
 
-.block-for-shadow{
+.block-for-shadow {
     position: relative;
 }
 
-.shadow{
+.shadow {
     border-radius: 100%;
     position: absolute;
     display: block;
@@ -218,13 +220,13 @@ a {
     opacity: 0.3;
 }
 
-.orange{
+.orange {
     right: 45%;
     background: #DB7A47;
     box-shadow: 0 0 90px 100px #DB7A47;
 }
 
-.grey{
+.grey {
     left: 45%;
     background: #DCDCDA;
     box-shadow: 0 0 90px 100px #DCDCDA;
@@ -335,6 +337,7 @@ a {
 }
 
 .iphones-block {
+    overflow: hidden;
     padding: 100px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -852,7 +855,7 @@ a {
 
 /* about us */
 
-.img-text{
+.img-text {
     gap: 20px;
 }
 
@@ -944,4 +947,57 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* contact */
+
+
+.main-block-contact{
+    padding-bottom: 111px;
+}
+.gap-fifteen{
+    display: flex;
+    gap: 15px;
+}
+
+.gap-thirty {
+    display: flex;
+    gap: 30px;
+}
+
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.list-contact{
+    flex-direction: column;
+}
+
+.blocks-of-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blocks-of-info a, .blocks-of-info address {
+    color: #171717;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blocks-of-info h1,
+.blocks-of-info h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.geo-loc{
+    max-width: 850px;
+    width: 100%;
 }
