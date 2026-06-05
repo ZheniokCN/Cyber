@@ -1001,3 +1001,15 @@ a {
     max-width: 850px;
     width: 100%;
 }
+/* blog */
+
+.figures-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+}
+
+.figure-blog figcaption{
+    
+}
