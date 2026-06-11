@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>Cyber- techical shop, apple, android, freeges,</title>
 </head>
-
 <body>
+    <div class="dark-bgc"></div>
     <header class="header">
         <nav class="wrapper">
             <div class="for-aling-items">
@@ -25,12 +25,12 @@
                         <p>Search</p>
                     </div>
                     <div>
-                        <picture class="for-menu-header"><img src="img/burger.svg" alt="burger"></picture>
                         <ul class="list-header disp-flex">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about_us.html">About us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a class="item" href="index.html">Home</a></li>
+                            <li><a class="item" href="about_us.html">About us</a></li>
+                            <li><a class="item" href="contact.html">Contact</a></li>
+                            <li><a class="item" href="blog.html">Blog</a></li>
+                            <li class="cancel">x</li>
                         </ul>
                     </div>
                     <ul class="icons disp-flex">
@@ -38,6 +38,7 @@
                         <li><a href="#"><img class="svg" src="img/heart.svg" alt="heart"></a></li>
                         <li><a href="#"><img class="svg" src="img/log-in.svg" alt="log-in"></a></li>
                     </ul>
+                    <picture class="for-menu-header"><img src="img/burger.svg" alt="burger"></picture>
                 </div>
             </div>
         </nav>
@@ -442,6 +443,24 @@
             </div>
         </nav>
     </footer>
+    <script>
+        const dark = document.querySelector(".dark-bgc"),
+            burger = document.querySelector(".for-menu-header"),
+            menu = document.querySelector(".list-header"),
+            cancel = document.querySelector(".cancel")
+
+        burger.addEventListener("click", function () {
+            menu.style.left = "0";
+            dark.style.display = "block"
+        })
+
+        function cancelBurger() {
+            menu.style.left = "-100%";
+            dark.style.display = "none"
+        }
+        cancel.addEventListener("click", cancelBurger)
+        dark.addEventListener("click", cancelBurger)
+    </script>
 </body>
 
 </html>
