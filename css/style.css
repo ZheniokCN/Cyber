@@ -1322,19 +1322,16 @@ a {
         grid-template-columns: repeat(4, 1fr);
     }
     
-    .delete-img {
-        display: block;
-    }
-
+    
     html {
         font-size: 0.80px;
     }
-
+    
     .winter-sale {
         font-size: 72rem;
     }
-
-
+    
+    
     .for-media {
         flex-direction: row;
         justify-content: space-between;
@@ -1342,6 +1339,9 @@ a {
 }
 
 @media screen and (min-width:1200px) {
+    .delete-img {
+        display: block;
+    }
     .dark-line-list {
         grid-template-columns: repeat(6, 1fr);
     }
