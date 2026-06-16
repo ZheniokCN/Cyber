@@ -49,7 +49,7 @@ img {
 }
 
 .logo {
-    min-width: 100rem;
+    min-width: 140rem;
     max-width: 205rem;
 }
 
@@ -182,10 +182,10 @@ a {
 }
 
 .cancel {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 .list-header {
@@ -196,18 +196,18 @@ a {
     align-items: flex-start;
     position: fixed;
     background-color: #fff;
-    width: 50%;
-    min-height: 75vh;
+    width: 70%;
+    min-height: 97vh;
     top: 0;
     left: -100%;
     z-index: 2;
     transition: all .5s ease;
     gap: 60rem;
-    border-radius: 0 0 20px;
+    border-radius: 0 0 1000rem;
 }
 
 .list-header li {
-    font-size: 39rem;
+    font-size: 50rem;
     padding-bottom: 20px;
     transform: scale(1.1);
 }
@@ -217,13 +217,13 @@ a {
     color: #171717;
 }
 
-.list-header li a{
+.list-header li a {
     transition: 0.4s;
     border-bottom: 2px solid transparent;
 }
 
 .list-header li a:hover {
-   border-bottom: 2px solid #171717;
+    border-bottom: 2px solid #171717;
 }
 
 .icons {
@@ -233,26 +233,26 @@ a {
 
 .dark-line {
     background-color: #2D2D2D;
-    padding: 25rem 0;
+    padding: 15rem 0;
 }
 
 .dark-line-list {
     display: grid;
     flex-direction: row;
     gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    overflow-x: scroll;
 }
 
-.dark-line-list .border {
-    border-right: 1px solid#FFF;
+.dark-line-list li+li {
+    border-left: 1px solid#FFF;
 }
 
 .dark-line-list li a {
-    font-size: 20rem;
-    padding: 0 25rem;
+    font-size: 15rem;
+    padding: 0 20rem;
     transition: 0.4s;
     color: #FFF;
     display: flex;
@@ -437,7 +437,6 @@ a {
 
 .main-block {
     display: grid;
-    min-height: 800rem;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
@@ -627,6 +626,7 @@ a {
 .img-figure,
 .for-img-scale {
     width: 100%;
+    aspect-ratio: 159/170;
     margin: 0;
     max-height: 340px;
 }
@@ -703,12 +703,16 @@ a {
 }
 
 .winter-sale-section {
+    margin-bottom: 96rem;
+    background: radial-gradient(109.45% 50% at 50% 50%, #000 0%, #282828 100%);
+}
+
+.winter-sale-section-block {
     overflow: hidden;
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    margin-bottom: 96rem;
-    background: radial-gradient(109.45% 50% at 50% 50%, #000 0%, #282828 100%);
+    min-height: 30vh;
 }
 
 .img-winter-sale-for-position {
@@ -716,9 +720,10 @@ a {
 }
 
 .img-winter-sale {
-    min-height: 100%;
     display: flex;
     align-items: center;
+    aspect-ratio: 264/145;
+    max-width: 537rem;
 }
 
 .head-winter-sale {
@@ -732,6 +737,7 @@ a {
     align-items: center;
     gap: 60rem;
 }
+
 
 .aling-winter-sale {
     min-height: 35vh;
@@ -756,9 +762,10 @@ a {
 }
 
 .iphones-winter-sale {
-    min-height: 100%;
     display: flex;
     align-items: flex-end;
+    aspect-ratio: 264/145;
+    max-width: 537rem;
 }
 
 .aling-items {
@@ -1096,7 +1103,7 @@ a {
 .for-media {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 
@@ -1190,10 +1197,6 @@ a {
 
 
 @media screen and (min-width:320px) {
-    html {
-        font-size: 0.55px;
-    }
-
     .icons {
         display: flex;
     }
@@ -1204,24 +1207,24 @@ a {
     }
 
     .plastation-five {
-        border: 1px solid #000;
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
 
     .macbook-block {
-        border: 1px solid #000;
         grid-column: 1 / 3;
         grid-row: 3 / 4;
     }
 
     .apple-airpods-block {
-        border: 1px solid #000;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
         grid-column: 1/2;
     }
 
     .apl-vision-block {
-        border: 1px solid #000;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
@@ -1245,17 +1248,15 @@ a {
     }
 
     .apple-airpods-block {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
         padding: 30rem 30rem 30rem 0;
     }
 
     .apl-vision-block {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
         padding: 30rem 30rem 30rem 0;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .dark-line-list {
-        grid-template-columns: repeat(6, 1fr);
     }
 }
 
@@ -1272,7 +1273,7 @@ a {
         width: 100%;
     }
 
-    .list-header li{
+    .list-header li {
         font-size: 18rem;
         padding: 0;
     }
@@ -1281,9 +1282,8 @@ a {
         display: none;
     }
 
-    .figures_main-page,
-    .figures_main-page-second {
-        grid-template-columns: repeat(4, 1fr);
+    ul.list-header li.cancel {
+        display: none;
     }
 }
 
@@ -1295,24 +1295,64 @@ a {
     .delete-img {
         display: block;
     }
+    .styles-for-head {
+        font-size: 38rem;
+    }
+    
+    .text-block {
+        font-size: 14rem;
+    }
 
 }
 
 @media screen and (min-width:1000px) {
+
+    .figures_main-page,
+    .figures_main-page-second {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     html {
-        font-size: 1px;
+        font-size: 0.80px;
     }
 
     .winter-sale {
         font-size: 72rem;
     }
 
-    .buttons-list {
-        grid-template-columns: repeat(6, 1fr);
-    }
 
     .for-media {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .dark-line-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (min-width:2000px) {
+    html {
+        font-size: 1px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .dark-line-list li a {
+        padding: 0 25rem;
+        font-size: 20rem;
+    }
+
+    .buttons-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+
+@media screen and (min-width:3000px) {
+    html {
+        font-size: 1.5px;
     }
 }
