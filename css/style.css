@@ -246,6 +246,14 @@ a {
     overflow-x: scroll;
 }
 
+.dark-line-list::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.dark-line-list::-webkit-scrollbar {
+    background: none;
+}
+
 .dark-line-list li+li {
     border-left: 1px solid#FFF;
 }
@@ -539,7 +547,7 @@ a {
 
 .ul-category-list {
     display: flex;
-    max-width: 617px;
+    max-width: 617rem;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -1295,10 +1303,11 @@ a {
     .delete-img {
         display: block;
     }
+
     .styles-for-head {
         font-size: 38rem;
     }
-    
+
     .text-block {
         font-size: 14rem;
     }
@@ -1353,6 +1362,32 @@ a {
 
 @media screen and (min-width:3000px) {
     html {
-        font-size: 1.5px;
+        font-size: 1.3px;
+    }
+    .list-footer{
+        min-width: 450rem;
+    }
+
+    .list-footer li a{
+        font-size: 25rem;
+    }
+
+    .list-footer li h2{
+        font-size: 40rem;
+    }
+
+    .styles-for-head {
+        font-size: 50rem;
+    }
+
+    .text-block {
+        font-size: 26rem;
+    }
+    .text-footer{
+        font-size: 30px;
+    }
+
+    .socials img, .svg {
+        min-width: 40rem;
     }
 }
