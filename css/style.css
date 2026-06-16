@@ -252,6 +252,7 @@ a {
 
 .dark-line-list::-webkit-scrollbar {
     background: none;
+    display: none;
 }
 
 .dark-line-list li+li {
@@ -1293,6 +1294,8 @@ a {
     ul.list-header li.cancel {
         display: none;
     }
+
+    dddd
 }
 
 @media screen and (min-width:800px) {
