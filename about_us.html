@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="dark-bgc"></div>
     <header class="header">
         <nav class="wrapper">
             <div class="for-aling-items">
@@ -25,12 +26,12 @@
                         <p>Search</p>
                     </div>
                     <div>
-                        <picture class="for-menu-header"><img src="img/burger.svg" alt="burger"></picture>
                         <ul class="list-header disp-flex">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about_us.html">About us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a class="item" href="index.html">Home</a></li>
+                            <li><a class="item" href="about_us.html">About us</a></li>
+                            <li><a class="item" href="contact.html">Contact</a></li>
+                            <li><a class="item" href="blog.html">Blog</a></li>
+                            <li class="cancel">x</li>
                         </ul>
                     </div>
                     <ul class="icons disp-flex">
@@ -38,6 +39,7 @@
                         <li><a href="#"><img class="svg" src="img/heart.svg" alt="heart"></a></li>
                         <li><a href="#"><img class="svg" src="img/log-in.svg" alt="log-in"></a></li>
                     </ul>
+                    <picture class="for-menu-header"><img src="img/burger.svg" alt="burger"></picture>
                 </div>
             </div>
         </nav>
@@ -94,42 +96,46 @@
                             class="dark-sp"><a href="about_us.html">about us</a></span>
                     </div>
                 </div>
-                <section class="disp-flex space-between img-text">
-                    <picture>
-                        <img class="img_about-us" src="img/photo-a-s.png" alt="about us">
-                    </picture>
-                    <div class="text_and_head">
-                        <div class="first-text-bl">
-                            <h1>Cyber — Your Gateway to the Future.</h1>
-                            <p>We don’t just sell electronics. We curate technologies that redefine daily life. In a world
-                                where gadgets have become an extension of ourselves, Cyber selects only the tools that make
-                                your life faster, more efficient, and more vivid.</p>
-                        </div>
-                        <div class="second-text-bl">
-                            <h3>Our Mission</h3>
-                            <p>To make innovation accessible. We believe everyone deserves the best tools for work,
-                                creativity, and play. That’s why we meticulously vet every smartphone, laptop, and accessory
-                                in our catalog before it reaches your hands.</p>
-                        </div>
-                    </div>
-                </section>
-                <div class="head-and-reasons">
-                    <h2>Why Choose Cyber?</h2>
-                    <div class="disp-grid reasons-bl">
-                        <div class="reasons-a-u">
-                            <h3>Purely Original:</h3>
-                            <p>No compromises on quality. We offer only official products with a full manufacturer’s
-                                warranty.</p>
-                        </div>
-                        <div class="reasons-a-u">
-                            <h3>Expert Insight:</h3>
-                            <p>Our team lives and breathes tech. From chip architectures to camera sensors, we provide the
-                                expertise to help you make the right choice.</p>
-                        </div>
-                        <div class="reasons-a-u">
-                            <h3>Cyber Speed:</h3>
-                            <p>Processing orders at the speed of thought. Our logistics are designed to exceed your
-                                expectations for delivery.</p>
+                <div class="about-info">
+                    <div>
+                        <section class="disp-flex space-between img-text">
+                            <picture>
+                                <img class="img_about-us delete-img" src="img/photo-a-s.png" alt="about us">
+                            </picture>
+                            <div class="text_and_head">
+                                <div class="first-text-bl">
+                                    <h1>Cyber — Your Gateway to the Future.</h1>
+                                    <p>We don’t just sell electronics. We curate technologies that redefine daily life. In a world
+                                        where gadgets have become an extension of ourselves, Cyber selects only the tools that make
+                                        your life faster, more efficient, and more vivid.</p>
+                                </div>
+                                <div class="second-text-bl">
+                                    <h3>Our Mission</h3>
+                                    <p>To make innovation accessible. We believe everyone deserves the best tools for work,
+                                        creativity, and play. That’s why we meticulously vet every smartphone, laptop, and accessory
+                                        in our catalog before it reaches your hands.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="head-and-reasons">
+                            <h2>Why Choose Cyber?</h2>
+                            <div class="disp-grid reasons-bl">
+                                <div class="reasons-a-u reason-firt">
+                                    <h3>Purely Original:</h3>
+                                    <p>No compromises on quality. We offer only official products with a full manufacturer’s
+                                        warranty.</p>
+                                </div>
+                                <div class="reasons-a-u reason-second">
+                                    <h3>Expert Insight:</h3>
+                                    <p>Our team lives and breathes tech. From chip architectures to camera sensors, we provide the
+                                        expertise to help you make the right choice.</p>
+                                </div>
+                                <div class="reasons-a-u reason-third">
+                                    <h3>Cyber Speed:</h3>
+                                    <p>Processing orders at the speed of thought. Our logistics are designed to exceed your
+                                        expectations for delivery.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,6 +186,24 @@
             </div>
         </nav>
     </footer>
+    <script>
+        const dark = document.querySelector(".dark-bgc"),
+            burger = document.querySelector(".for-menu-header"),
+            menu = document.querySelector(".list-header"),
+            cancel = document.querySelector(".cancel")
+
+        burger.addEventListener("click", function () {
+            menu.style.left = "0";
+            dark.style.display = "block"
+        })
+
+        function cancelBurger() {
+            menu.style.left = "-100%";
+            dark.style.display = "none"
+        }
+        cancel.addEventListener("click", cancelBurger)
+        dark.addEventListener("click", cancelBurger)
+    </script>
 </body>
 
 </html>
