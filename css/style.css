@@ -176,7 +176,7 @@ a {
 
 .for-menu-header {
     display: block;
-    width: 50px;
+    width: 60rem;
     height: 100%;
     cursor: pointer;
 }
@@ -1162,13 +1162,9 @@ a {
 
 .figures-blog {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10rem;
     padding-bottom: 99rem;
-}
-
-.figure-blog {
-    min-height: 560px;
 }
 
 .figure-blog figcaption {
@@ -1223,6 +1219,13 @@ a {
 @media screen and (min-width:320px) {
     .icons {
         display: flex;
+    }
+
+    .socials img,
+    .svg {
+        min-width: 30rem;
+        max-width: 30rem;
+        aspect-ratio: 1/1;
     }
 
     .main-block {
@@ -1286,6 +1289,10 @@ a {
         border-bottom: 1px solid transparent;
         padding: 30rem 30rem 30rem 0;
     }
+
+    .figures-blog{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width:638px) {
@@ -1316,6 +1323,10 @@ a {
 
     .reasons-bl {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .figures-blog{
+        gap: 20rem;
     }
 }
 
