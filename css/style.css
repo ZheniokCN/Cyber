@@ -987,6 +987,8 @@ a {
 }
 
 .img-text {
+    display: flex;
+    flex-direction: column;
     gap: 20rem;
 }
 
@@ -1000,17 +1002,15 @@ a {
 }
 
 .head-and-reasons h2 {
-    max-width: 410rem;
     white-space: nowrap;
     margin: 0 auto;
     font-size: 42rem;
     font-style: normal;
     font-weight: 500;
-    line-height: normal
+    line-height: normal;
 }
 
 .text_and_head {
-    max-width: 742px;
     width: 100%;
 }
 
@@ -1025,7 +1025,7 @@ a {
     font-size: 42rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 0.9em;
+    line-height: 1.09em;
 }
 
 .first-text-bl p,
@@ -1056,18 +1056,6 @@ a {
     gap: 20px;
 }
 
-.reason-firt {
-    grid-row: 1 / 2;
-}
-
-.reason-second {
-    grid-row: 1 / 2;
-}
-
-.reason-third {
-    grid-row: 1 / 2;
-}
-
 .reasons-a-u {
     display: flex;
     flex-direction: column;
@@ -1086,6 +1074,7 @@ a {
 }
 
 .reasons-a-u p {
+    color: var(--gray-middle, #9F9F9F);
     font-size: 18rem;
     font-style: normal;
     font-weight: 400;
@@ -1267,19 +1256,6 @@ a {
     .reasons-bl {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .reason-firt {
-        grid-row: 1 / 2;
-    }
-
-    .reason-second {
-        grid-row: 2 / 3;
-    }
-
-    .reason-third {
-        grid-row: 3 / 4;
-    }
-
 }
 
 @media screen and (min-width:500px) {
@@ -1341,21 +1317,6 @@ a {
     .reasons-bl {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .reason-firt {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    .reason-second {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
-
-    .reason-third {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-    }
 }
 
 @media screen and (min-width:800px) {
@@ -1379,6 +1340,15 @@ a {
     .figures_main-page,
     .figures_main-page-second {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .img-text{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .text_and_head{
+        max-width: 50%;
     }
 
 
@@ -1406,12 +1376,6 @@ a {
     }
 }
 
-@media screen and (min-width:2000px) {
-    html {
-        font-size: 1px;
-    }
-}
-
 @media screen and (min-width:1300px) {
     .dark-line-list li a {
         padding: 0 25rem;
@@ -1422,6 +1386,12 @@ a {
         grid-template-columns: repeat(6, 1fr);
     }
 }
+@media screen and (min-width:2000px) {
+    html {
+        font-size: 1px;
+    }
+}
+
 
 
 @media screen and (min-width:3000px) {
