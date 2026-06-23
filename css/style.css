@@ -575,7 +575,7 @@ a {
     border-bottom: 2px solid #000;
 }
 
-.figures_main-page {
+.figures_main-page, .figures_fi {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -595,12 +595,21 @@ a {
     margin: 0;
     padding: 28rem 24rem 38rem;
     background-color: #F1F1F1;
-    border-radius: 5px;
+    border-radius: 5rem;
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
     transition: 0.4s;
+    position: relative;
+}
+
+.heart-fi{
+    position: absolute;
+    min-width: 24rem;
+    max-width: 24rem;
+    right: 10rem;
+    top: 10rem;
 }
 
 .figure:hover {
@@ -1212,7 +1221,18 @@ a {
     min-width: 30px;
 }
 
+/* wish-list */
 
+.main-wl{
+    display: flex;
+    min-height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .figures_fi{
+    padding: 0rem 0 107rem;
+}
 
 
 
@@ -1348,29 +1368,25 @@ a {
 
 @media screen and (min-width:1000px) {
 
-    .figures_main-page,
-    .figures_main-page-second {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
+    
     .img-text{
         flex-direction: row;
         align-items: center;
     }
-
+    
     .text_and_head{
         max-width: 50%;
     }
-
-
+    
+    
     html {
         font-size: 0.80px;
     }
-
+    
     .winter-sale {
         font-size: 72rem;
     }
-
+    
     .for-media {
         flex-direction: row;
         justify-content: space-between;
@@ -1380,6 +1396,11 @@ a {
 @media screen and (min-width:1200px) {
     .delete-img {
         display: block;
+    }
+    .figures_main-page,
+    .figures_main-page-second,
+    .figures_fi {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .dark-line-list {
