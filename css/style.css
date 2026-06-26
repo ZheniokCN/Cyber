@@ -1096,6 +1096,7 @@ a {
 .img-cont {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .main-block-contact {
@@ -1132,7 +1133,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 35rem;
-    min-width: 30vw;
+    min-width: 220rem;
     white-space: nowrap;
 }
 
@@ -1353,7 +1354,6 @@ a {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 35rem;
-        min-width: 15vw;
     }
 
     .for-phone-info {
@@ -1454,6 +1454,7 @@ a {
     html {
         font-size: 1px;
     }
+
 }
 
 
