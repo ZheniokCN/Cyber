@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="greybg"></div>
     <div class="dark-bgc"></div>
     <header class="header">
         <nav class="wrapper">
@@ -27,10 +28,10 @@
                     </div>
                     <div>
                         <ul class="list-header disp-flex">
-                            <li><a class="item" href="index.html">Home</a></li>
-                            <li><a class="item" href="about_us.html">About us</a></li>
-                            <li><a class="item" href="contact.html">Contact</a></li>
-                            <li><a class="item" href="blog.html">Blog</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about_us.html">About us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li class="cancel">x</li>
                         </ul>
                     </div>
@@ -47,11 +48,20 @@
             <nav class="wrapper">
                 <div class="dark-line-block">
                     <ul class="dark-line-list">
-                        <li class="border">
+                        <li class="item-header-relative">
                             <a href="#">
                                 Phones
                                 <img class="svg-rotate" src="img/arrow.svg" alt="arrow">
                             </a>
+                            <ul class="phones-hover">
+                                <li><a href="product.html">iPhone</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Xiaomi</a></li>
+                                <li><a href="#">Oppo</a></li>
+                                <li><a href="#">Motorola</a></li>
+                                <li><a href="#">Nokia</a></li>
+                                <li><a href="#">Breezy</a></li>
+                            </ul>
                         </li>
                         <li class="border">
                             <a href="#">
@@ -215,9 +225,18 @@
     </footer>
     <script>
         const dark = document.querySelector(".dark-bgc"),
+            grey = document.querySelector(".greybg"),
             burger = document.querySelector(".for-menu-header"),
             menu = document.querySelector(".list-header"),
-            cancel = document.querySelector(".cancel")
+            cancel = document.querySelector(".cancel"),
+            list = document.querySelector(".phones-hover"),
+            item = document.querySelector(".item-header-relative")
+
+        item.addEventListener("click", function () {
+            list.style.top = "100%"
+            list.style.opacity = "1"
+            grey.style.display = "block"
+        })
 
         burger.addEventListener("click", function () {
             menu.style.left = "0";

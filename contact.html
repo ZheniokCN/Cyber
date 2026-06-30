@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div class="greybg"></div>
+    <div class="dark-bgc"></div>
     <header class="header">
         <nav class="wrapper">
             <div class="for-aling-items">
@@ -31,6 +33,7 @@
                             <li><a href="about_us.html">About us</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="blog.html">Blog</a></li>
+                            <li class="cancel">x</li>
                         </ul>
                     </div>
                     <ul class="icons disp-flex">
@@ -46,11 +49,20 @@
             <nav class="wrapper">
                 <div class="dark-line-block">
                     <ul class="dark-line-list">
-                        <li class="border">
+                        <li class="item-header-relative">
                             <a href="#">
                                 Phones
                                 <img class="svg-rotate" src="img/arrow.svg" alt="arrow">
                             </a>
+                            <ul class="phones-hover">
+                                <li><a href="product.html">iPhone</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Xiaomi</a></li>
+                                <li><a href="#">Oppo</a></li>
+                                <li><a href="#">Motorola</a></li>
+                                <li><a href="#">Nokia</a></li>
+                                <li><a href="#">Breezy</a></li>
+                            </ul>
                         </li>
                         <li class="border">
                             <a href="#">
@@ -95,49 +107,47 @@
                         class="dark-sp"><a href="contact.html">contact</a></span>
                 </div>
             </div>
-            <div class="wrapper">
-                <div class="wrapper">
-                    <div class="wrapper">
-                        <div class="disp-flex space-between gap-fifteen main-block-contact">
-                            <div class="for-phone-info">
-                                <div class="info-contact">
-                                    <div class="blocks-of-info">
-                                        <h1>Address</h1>
-                                        <ul class="list-contact gap-fifteen">
-                                            <li>
-                                                <address>Lviv, Patona st. 122</address>
-                                            </li>
-                                            <li>
-                                                <address>Lviv, Schevchenka st. 26</address>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="blocks-of-info">
-                                        <h2>Phone</h2>
-                                        <ul class="gap-fifteen list-contact">
-                                            <li><a href="tel:+380778767656">+380 77 876 76 56</a></li>
-                                            <li><a href="tel:+380778767666">+380 77 876 76 66</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="blocks-of-info">
-                                        <h2>Email</h2>
-                                        <a href="mailto: cyberstore@gmail.com">cyberstore@gmail.com</a>
-                                    </div>
-                                    <div class="blocks-of-info">
-                                        <h2>Social media</h2>
-                                        <ul class="disp-flex gap-thirty">
-                                            <li><a href="#"><img class="svg" src="img/social-dark-ins.svg" alt="instagram"></a></li>
-                                            <li><a href="#"><img class="svg" src="img/social-you-tube.svg" alt="you-tube"></a></li>
-                                            <li><a href="#"><img class="svg" src="img/facebook.svg" alt="facebook"></a></li>
-                                            <li><a href="#"><img class="svg" src="img/threads.svg" alt="threads"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <picture class="img-cont">
-                                    <img class="geo-loc" src="img/geo-loc.png" alt="geo">
-                                </picture>
+            <div class="wrapper-con">
+                <div class="disp-flex space-between gap-fifteen main-block-contact">
+                    <div class="for-phone-info">
+                        <div class="info-contact">
+                            <div class="blocks-of-info">
+                                <h1>Address</h1>
+                                <ul class="list-contact gap-fifteen">
+                                    <li>
+                                        <address>Lviv, Patona st. 122</address>
+                                    </li>
+                                    <li>
+                                        <address>Lviv, Schevchenka st. 26</address>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="blocks-of-info">
+                                <h2>Phone</h2>
+                                <ul class="gap-fifteen list-contact">
+                                    <li><a href="tel:+380778767656">+380 77 876 76 56</a></li>
+                                    <li><a href="tel:+380778767666">+380 77 876 76 66</a></li>
+                                </ul>
+                            </div>
+                            <div class="blocks-of-info">
+                                <h2>Email</h2>
+                                <a href="mailto: cyberstore@gmail.com">cyberstore@gmail.com</a>
+                            </div>
+                            <div class="blocks-of-info">
+                                <h2>Social media</h2>
+                                <ul class="disp-flex gap-thirty">
+                                    <li><a href="#"><img class="svg" src="img/social-dark-ins.svg" alt="instagram"></a>
+                                    </li>
+                                    <li><a href="#"><img class="svg" src="img/social-you-tube.svg" alt="you-tube"></a>
+                                    </li>
+                                    <li><a href="#"><img class="svg" src="img/facebook.svg" alt="facebook"></a></li>
+                                    <li><a href="#"><img class="svg" src="img/threads.svg" alt="threads"></a></li>
+                                </ul>
                             </div>
                         </div>
+                        <picture class="img-cont">
+                            <img class="geo-loc" src="img/geo-loc.png" alt="geo">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -187,6 +197,33 @@
             </div>
         </nav>
     </footer>
+    <script>
+        const dark = document.querySelector(".dark-bgc"),
+            grey = document.querySelector(".greybg"),
+            burger = document.querySelector(".for-menu-header"),
+            menu = document.querySelector(".list-header"),
+            cancel = document.querySelector(".cancel"),
+            list = document.querySelector(".phones-hover"),
+            item = document.querySelector(".item-header-relative")
+
+        item.addEventListener("click", function () {
+            list.style.top = "100%"
+            list.style.opacity = "1"
+            grey.style.display = "block"
+        })
+
+        burger.addEventListener("click", function () {
+            menu.style.left = "0";
+            dark.style.display = "block"
+        })
+
+        function cancelBurger() {
+            menu.style.left = "-100%";
+            dark.style.display = "none"
+        }
+        cancel.addEventListener("click", cancelBurger)
+        dark.addEventListener("click", cancelBurger)
+    </script>
 </body>
 
 </html>
