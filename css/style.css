@@ -1174,7 +1174,7 @@ a {
 
 .for-phone-info {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 50rem;
 }
 
@@ -1182,7 +1182,6 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 35rem;
-    min-width: 220rem;
     white-space: nowrap;
 }
 
@@ -1224,9 +1223,9 @@ a {
     position: relative;
     overflow: hidden;
     width: 100%;
+    transform: translateY(36px);
     padding-top: 72px;
-    min-height: 400rem;
-    max-height: 400rem;
+    min-height: 550px;
 }
 
 .geo-loc {
@@ -1234,7 +1233,6 @@ a {
     top: -72px;
     left: 0;
     display: block;
-    max-height: 700rem;
     height: 100%;
     width: 100%;
     border: none;
@@ -1633,7 +1631,8 @@ a {
     }
 
     .for-phone-info {
-        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 
     .list-header li {
@@ -1654,11 +1653,14 @@ a {
     }
 }
 
+@media screen and (min-width:638px) {
+    
+}
+
 @media screen and (min-width:800px) {
     html {
         font-size: 0.75px;
     }
-
 
     .styles-for-head {
         font-size: 38rem;
@@ -1743,6 +1745,10 @@ a {
 @media screen and (min-width:3000px) {
     html {
         font-size: 1.3px;
+    }
+
+    .wrapper-con{
+        max-width: none;
     }
 
     .list-footer {
