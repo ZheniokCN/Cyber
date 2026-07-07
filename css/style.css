@@ -665,6 +665,11 @@ a {
     max-width: 24rem;
     right: 10rem;
     top: 10rem;
+    transition: 0.4s;
+}
+
+.heart-fi:hover{
+    fill: #9F9F9F;
 }
 
 .figure:hover {
@@ -1530,9 +1535,6 @@ a {
     border-collapse: collapse;
 }
 
-.td-head{
-    font-weight: 600;
-}
 
 .table th {
     padding: 35rem 10rem;
@@ -1548,6 +1550,10 @@ a {
     font-size: 24rem;
 }
 
+.table tr .td-head{
+    font-weight: 600;
+    font-size: 28rem;
+}
 
 @media screen and (min-width:320px) {
     .icons {
@@ -1677,7 +1683,7 @@ a {
 }
 
 
-@media screen and (min-width:680px) {
+@media screen and (min-width:768px) {
     
     .container {
         flex-wrap: nowrap;
