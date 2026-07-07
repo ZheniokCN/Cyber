@@ -90,7 +90,7 @@ a {
 
 .wrapper-pr {
     margin: 0 auto;
-    max-width: 1429px;
+    max-width: 1800px;
     width: 90%;
 }
 
@@ -1243,7 +1243,7 @@ a {
 .width-one-hunred {
     display: inline-block;
     width: 100%;
-}  
+}
 
 .figures-blog {
     display: grid;
@@ -1322,7 +1322,6 @@ a {
 /* product */
 
 .info-container {
-    max-width: 45%;
     gap: 28px;
     display: flex;
     flex-direction: column;
@@ -1347,8 +1346,8 @@ a {
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 20px;
     padding-bottom: 100px;
 }
@@ -1379,7 +1378,7 @@ a {
 
 .black-button:hover {
     border: 1px solid var(--text-color, #171717);
-    background-color: #FFF;
+    background-color: lightblue;
     color: #171717;
 }
 
@@ -1391,9 +1390,8 @@ a {
 }
 
 .white-button:hover {
-    color: #FFF;
     border: 1px solid var(--text-color, #171717);
-    background: var(--text-color, #171717);
+    background-color: lightblue;
 }
 
 .name-info {
@@ -1415,7 +1413,6 @@ a {
     grid-template-columns: 3;
     grid-template-rows: 2;
     gap: 20rem;
-    width: 55%;
 }
 
 .grey-text {
@@ -1498,10 +1495,17 @@ a {
     display: flex;
     justify-content: center;
     padding-bottom: 50rem;
+    text-align: center;
+}
+
+.wonehund {
+    width: 100%;
+    overflow-x: scroll;
 }
 
 .table {
     width: 100%;
+    min-width: 150vw;
 }
 
 .table,
@@ -1607,8 +1611,31 @@ a {
     }
 }
 
-@media screen and (min-width:638px) {
+@media screen and (min-width:550px) {
 
+    .wrapper-pr {
+        max-width: 1429px;
+    }
+
+    .container {
+        align-items: center;
+    }
+    
+    .container {
+        flex-wrap: nowrap;
+    }
+    
+    .grid-conteiner{
+        max-width: 55%;
+    }
+    
+    .info-container {
+        max-width: 45%;
+    }
+}
+
+@media screen and (min-width:638px) {
+    
     .header .list-header {
         display: flex;
         position: static;
@@ -1619,10 +1646,8 @@ a {
         min-height: 0;
         width: 100%;
     }
+    
 
-    .container {
-        flex-direction: row;
-    }
 
     .info-contact {
         display: grid;
@@ -1653,9 +1678,7 @@ a {
     }
 }
 
-@media screen and (min-width:638px) {
-    
-}
+@media screen and (min-width:638px) {}
 
 @media screen and (min-width:800px) {
     html {
@@ -1675,6 +1698,11 @@ a {
 @media screen and (min-width:1000px) {
     .main-c {
         min-height: 64vh;
+    }
+
+    .table {
+        width: 100%;
+        min-width: 0;
     }
 
     .img-text {
@@ -1747,7 +1775,7 @@ a {
         font-size: 1.3px;
     }
 
-    .wrapper-con{
+    .wrapper-con {
         max-width: none;
     }
 
