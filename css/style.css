@@ -659,12 +659,13 @@ a {
     position: relative;
 }
 
-.heart-fi {
+.heart-link{
+    right: 20rem;
+    top: 20rem;
     position: absolute;
-    min-width: 24rem;
-    max-width: 24rem;
-    right: 10rem;
-    top: 10rem;
+}
+
+.heart-fi {
     transition: 0.4s;
 }
 
