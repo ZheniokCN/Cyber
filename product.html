@@ -50,7 +50,7 @@
             <nav class="wrapper">
                 <div class="dark-line-block">
                     <ul class="dark-line-list">
-                        <li class="item-header-relative">
+                        <li class="item-header-">
                             <a href="#">
                                 Phones
                                 <img class="svg-rotate" src="img/arrow.svg" alt="arrow">
@@ -127,6 +127,62 @@
                         <div class="disp-flex">
                             <p class="dark-price">$ 1400</p>
                             <p class="light-price">$ 1599</p>
+                        </div>
+                    </div>
+                    <div class="color-block">
+                        <h2 class="name-info select-c">
+                            Select color:
+                        </h2>
+                        <div class="colors">
+                            <div>
+                                <input class="appearance color-iphone blue-color" type="radio" id="blue" value="blue" name="colors-input" checked>
+                                <label for="blue"></label>
+                                <span></span>
+                            </div>
+                            <div>
+                                <input class="appearance color-iphone orange-color" type="radio" id="orange" value="orange" name="colors-input">
+                                <label for="orange"></label>
+                                <span></span>
+                            </div>
+                            <div>
+                                <input class="appearance color-iphone black-color" type="radio" id="black"  value="black" name="colors-input">
+                                <label for="black"></label>
+                                <span></span>
+                            </div>
+                            <div>
+                                <input class="appearance color-iphone white-color" type="radio" id="white" value="white" name="colors-input">
+                                <label for="white"></label>
+                                <span></span>
+                            </div>
+                            <div>
+                                <input class="appearance color-iphone pink-color" type="radio" id="pink" value="pink" name="colors-input">
+                                <label for="pink"></label>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size-block">
+                        <h2 class="name-info select-c">
+                            Select storage size:
+                        </h2>
+                        <div class="sizes">
+                            <div>
+                                <input class="appearance first-size size" type="radio" id="first" value="first" name="size-input">
+                                <label class=" text-size" for="first">128GB</label>
+                            </div>
+                            <div>
+                                <input class="appearance second-size size" type="radio" id="second" value="second" name="size-input">
+                                <label class="text-size" for="second">256GB</label>
+                            </div>
+                            <div>
+                                <input class="appearance third-size size" type="radio" id="third" value="third" name="size-input">
+                                <label class=" text-size" for="third">512GB</label>
+                            </div>
+                            <div>
+                                <input class="appearance four-size size" type="radio" id="four" value="four" name="size-input" checked>
+                                <label class=" text-size" for="four">1TB</label>
+                            </div>
+
                         </div>
                     </div>
                     <div>
@@ -356,7 +412,7 @@
             menu = document.querySelector(".list-header"),
             cancel = document.querySelector(".cancel"),
             list = document.querySelector(".phones-hover"),
-            item = document.querySelector(".item-header-relative")
+            item = document.querySelector(".item-header-")
 
         item.addEventListener("click", function () {
             list.style.top = "100%"
