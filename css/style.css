@@ -1512,7 +1512,7 @@ a {
     border: 1px solid var(--gray-middle, #9F9F9F);
     font-size: 18rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     color: #9F9F9F;
     width: 100%;
@@ -1558,6 +1558,8 @@ a {
 .color-iphone:checked {
     width: 30rem;
     height: 30rem;
+    border: 2px solid #fff;
+    outline: 1px solid #000;
 }
 
 .appearance {
