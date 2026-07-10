@@ -660,13 +660,14 @@ a {
 }
 
 .heart-link {
-    right: 20rem;
-    top: 20rem;
+    right: 10rem;
+    top: 10rem;
     position: absolute;
+    z-index: 5;
 }
 
 .heart-fi {
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 .heart-fi:hover {
@@ -1639,6 +1640,11 @@ a {
 .table tr .td-head {
     font-weight: 600;
     font-size: 28rem;
+}
+
+/* catalog */
+.grid-catalog-page{
+    grid-template-columns: 1fr 76%;
 }
 
 @media screen and (min-width:320px) {
