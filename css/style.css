@@ -1553,6 +1553,8 @@ a {
     width: 24rem;
     height: 24rem;
     border-radius: 100%;
+    border: 2px solid #fff;
+    outline: 1px solid #fff;
 }
 
 .color-iphone:checked {
