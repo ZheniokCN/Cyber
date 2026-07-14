@@ -1757,7 +1757,6 @@ a {
 }
 
 .filter {
-    opacity: 0;
     position: absolute;
     left: -200%;
     z-index: 200;
