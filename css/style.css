@@ -1647,16 +1647,10 @@ a {
 
 /* catalog */
 
-.figures-catalog{
+.figures-catalog {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20rem;
-}
-
-.grid-catalog-page {
-    display: grid;
-    grid-template-columns: 1fr 76%;
-    gap: 18rem;
 }
 
 .catalog-buttons {
@@ -1702,7 +1696,7 @@ a {
     border: 1px solid #9F9F9F;
 }
 
-.brands-inputs{
+.brands-inputs {
     display: flex;
     flex-direction: column;
     gap: 15rem;
@@ -1719,7 +1713,7 @@ a {
     outline: 1px solid #9F9F9F;
 }
 
-.buttons-cat{
+.buttons-cat {
     padding-top: 63rem;
     display: flex;
     flex-direction: column;
@@ -1730,23 +1724,48 @@ a {
     color: #9F9F9F;
 }
 
-.pages-numbers{
+.pages-numbers {
     align-items: center;
     justify-content: center;
     gap: 20rem;
     padding: 50rem 0 114rem;
 }
 
-.pages-numbers .number-input{
+.pages-numbers .number-input {
     font-size: 24rem;
 }
 
-.padding-right{
+.padding-right {
     padding-right: 50rem;
 }
 
-.padding-left{
+.padding-left {
     padding-left: 50rem;
+}
+
+.relative-main {
+    position: relative;
+}
+
+.relative-filter {
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 10px;
+    z-index: 5;
+}
+
+.filter {
+    opacity: 0;
+    position: absolute;
+    left: -200%;
+    z-index: 200;
+    background-color: #fff;
+    padding: 0 50px 0 10px;
+    height: 100%;
+    top: -100px;
+    border-radius:0 0 60px 0;
 }
 
 @media screen and (min-width:320px) {
@@ -1979,11 +1998,36 @@ a {
     }
 }
 
+@media screen and (min-width:1450px) {
+
+    .relative-filter {
+        display: none;
+    }
+
+    .filter {
+        position: static;
+        background-color: #fff;
+        padding: 0;
+        transition: 0.4s;
+    }
+
+    .grid-catalog-page {
+        display: grid;
+        grid-template-columns: 1fr 76%;
+        gap: 18rem;
+    }
+}
+
+@media screen and (min-width:1550px) {
+    .figures-catalog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (min-width:2000px) {
     html {
         font-size: 1px;
     }
-
 }
 
 
