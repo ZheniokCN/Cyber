@@ -110,19 +110,25 @@
             </div>
         </div>
         <div class="wrapper">
-            <picture class="relative-filter">
-                <img src="img/filter.svg" alt="filter">
-            </picture>
+            <div class="relative-filter">
+                <picture>
+                    <img src="img/filter.svg" alt="filter">
+                </picture>
+                <p>filter</p>
+            </div>
             <form action="#" method="post">
                 <div class="grid-catalog-page">
                     <div class="filter">
+                        <p class="cancel-filter">
+                            x
+                        </p>
                         <div class="border-cat">
                             <h1 class="heads-filter">Price</h1>
                             <div class="catalog-buttons">
-                                <div><label><input class="appearance btn-cat" type="text" name="price" id="priceFrom"
-                                            placeholder="min-price"></label></div>
-                                <div><label><input class="appearance btn-cat" type="text" name="price" id="priceTo"
-                                            placeholder="max-price"></label></div>
+                                <div><label><input class="appearance btn-cat" type="number" name="price" id="priceFrom"
+                                            placeholder="min-price $" min="1" max="`1000000"></label></div>
+                                <div><label><input class="appearance btn-cat" type="number" name="price" id="priceTo"
+                                            placeholder="max-price $" min="1" max="1000000"></label></div>
                             </div>
                         </div>
                         <div class="border-cat">
@@ -350,7 +356,7 @@
                                 </div>
                                 <div class="price-and-button">
                                     <p class="price"><b>$ 1400</b></p>
-                                    <div class="btn_figures-block"><a class="btn_figures" href="#">Buy now</a></div>
+                                    <div class="btn_figures-block position-r"><a class="btn_figures" href="#">Buy now</a></div>
                                 </div>
                             </figcaption>
                             <a class="mask" href="product.html"></a>
@@ -703,6 +709,7 @@
             filters = document.querySelector(".filter"),
             menu = document.querySelector(".list-header"),
             cancel = document.querySelector(".cancel"),
+            canfilter = document.querySelector(".cancel-filter"),
             list = document.querySelector(".phones-hover"),
             item = document.querySelector(".item-header-relative")
 
@@ -734,6 +741,7 @@
         }
 
         cancel.addEventListener("click", cancelBurger)
+        canfilter.addEventListener("click", cancelFilter)
         dark.addEventListener("click", cancelBurger)
         dark.addEventListener("click", cancelFilter)
     </script>

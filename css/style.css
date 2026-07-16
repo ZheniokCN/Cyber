@@ -668,6 +668,7 @@ a {
 }
 
 .heart-fi {
+    fill: #F1F1F1;
     transition: 0.6s;
 }
 
@@ -752,6 +753,7 @@ a {
 }
 
 .mask {
+    z-index: 1;
     position: absolute;
     left: 0;
     top: 0;
@@ -1650,12 +1652,19 @@ a {
 .figures-catalog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20rem;
+    gap: 10rem;
 }
 
 .catalog-buttons {
     display: flex;
-    gap: 55rem;
+    gap: 5rem;
+    justify-content: space-between;
+    max-width: 450rem;
+}
+
+.position-r{
+    position: relative;
+    z-index: 2;
 }
 
 .scale-none {
@@ -1676,11 +1685,12 @@ a {
     display: block;
     font-size: 24rem;
     text-align: center;
-    width: 180rem;
+    max-width: 180rem;
+    width: 100%;
     height: 34rem;
     padding: 16rem 9rem;
     border-radius: 5px;
-    border: 1px solid var(--ligh-gray, #F1F1F1);
+    border: 1px solid #9e9e9e;
 }
 
 .brand {
@@ -1750,21 +1760,39 @@ a {
 .relative-filter {
     display: block;
     position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 10px;
+    left: 13px;
+    top: 35px;
     z-index: 5;
+    color: #9F9F9F;
+    font-size: 30rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 .filter {
-    position: absolute;
+    display: block;
+    position: fixed;
     left: -200%;
+    top: -50px;
     z-index: 200;
     background-color: #fff;
-    padding: 0 50px 0 10px;
+    padding: 50px 20px 10px 10px;
     height: 100%;
-    top: -100px;
-    border-radius:0 0 60px 0;
+    overflow-y: scroll;
+    transition: 0.4s;
+}
+
+.cancel-filter {
+    font-size: 30rem;
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 55px;
+}
+
+.figures-catalog {
+    padding-top: 50px;
 }
 
 @media screen and (min-width:320px) {
@@ -1784,7 +1812,7 @@ a {
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .plastation-five {
+    .pla35ation-five {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
@@ -2003,16 +2031,26 @@ a {
         display: none;
     }
 
+    .figures-catalog {
+        padding-top: 0;
+    }
+
+    .cancel-filter {
+        display: none;
+    }
+
     .filter {
         position: static;
         background-color: #fff;
         padding: 0;
         transition: 0.4s;
+        overflow: auto;
+        padding: 0 10px 0 0;
     }
 
     .grid-catalog-page {
         display: grid;
-        grid-template-columns: 1fr 76%;
+        grid-template-columns: 1fr 70%;
         gap: 18rem;
     }
 }
