@@ -7,6 +7,23 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>E com cyber - catalog-phones</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -20,11 +37,12 @@
                             <img class="width-one-hunred logo" src="img/logo-head.svg" alt="logo">
                         </picture>
                     </a>
-                    <div class="search disp-flex">
-                        <picture>
+                    <div class="position-r search-bl disp-flex">
+                        <input class="appearance search-input" type="search" name="search" id="search">
+                        <label class="search position-a" for="search">
                             <img src="img/search.svg" alt="search">
-                        </picture>
-                        <p>Search</p>
+                            Search
+                        </label>
                     </div>
                     <div>
                         <ul class="list-header disp-flex">
@@ -100,12 +118,22 @@
     </header>
     <main class="relative-main">
         <div class="wrapper-pr">
-            <div>
+            <div class="disp-flex space-between">
                 <div class="active-page">
                     <div class="active-page-div">
                         <span class="grey-sp"><a href="index.html">home</a></span><span class="grey-sp">/</span><span
                             class="dark-sp"><a href="about_us.html">catalog</a></span>
                     </div>
+                </div>
+                <div class="sort-by position-r">
+                    <select class="appearance" id="sort">
+                        <option value="toBigger"><span class="grey-label">sort by:</span> price hight to low</option>
+                        <option value="toSmaller"><span class="grey-label">sort by:</span> price low to hight</option>
+                    </select>
+                    <svg class="position-a arrow-select" xmlns="http://www.w3.org/2000/svg" width="13" height="8"
+                        viewBox="0 0 13 8" fill="none">
+                        <path d="M1 1L6.50002 6L12 1" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round" />
+                    </svg>
                 </div>
             </div>
         </div>
@@ -116,9 +144,9 @@
                 </picture>
                 <p>filter</p>
             </div>
-            <form action="#" method="post">
-                <div class="grid-catalog-page">
-                    <div class="filter">
+            <div class="grid-catalog-page">
+                <div class="filter">
+                    <form action="#" method="post">
                         <p class="cancel-filter">
                             x
                         </p>
@@ -335,7 +363,9 @@
                             <button type="submit" class="btn-prod black-button" href="#">Apply filters</button>
                             <button type="reset" class="btn-prod white-button" href="#">Reset all filters</button>
                         </div>
-                    </div>
+                    </form>
+                </div>
+                <div>
                     <div class="figures-catalog">
                         <figure class="figure mask-figure">
                             <a class="heart-link" href="wishlist.html"><svg class="heart-fi"
@@ -356,7 +386,8 @@
                                 </div>
                                 <div class="price-and-button">
                                     <p class="price"><b>$ 1400</b></p>
-                                    <div class="btn_figures-block position-r"><a class="btn_figures" href="#">Buy now</a></div>
+                                    <div class="btn_figures-block position-r"><a class="btn_figures" href="#">Buy
+                                            now</a></div>
                                 </div>
                             </figcaption>
                             <a class="mask" href="product.html"></a>
@@ -634,26 +665,26 @@
                             </figcaption>
                         </figure>
                     </div>
+                    <div class="pages-numbers disp-flex">
+                        <a href="#"><svg class="padding-right" xmlns="http://www.w3.org/2000/svg" width="51" height="15"
+                                viewBox="0 0 51 15" fill="none">
+                                <path
+                                    d="M0.292892 8.07112C-0.0976295 7.6806 -0.0976295 7.04743 0.292892 6.65691L6.65685 0.292946C7.04738 -0.0975785 7.68054 -0.0975785 8.07107 0.292946C8.46159 0.68347 8.46159 1.31664 8.07107 1.70716L2.41422 7.36401L8.07107 13.0209C8.46159 13.4114 8.46159 14.0446 8.07107 14.4351C7.68054 14.8256 7.04738 14.8256 6.65685 14.4351L0.292892 8.07112ZM51 7.36401V8.36401H1V7.36401V6.36401H51V7.36401Z"
+                                    fill="#9F9F9F" />
+                            </svg></a>
+                        <a href="#"><span class="number-input">1</span></a>
+                        <a href="#"><span class="number-input">2</span></a>
+                        <a href="#"><span class="number-input">3</span></a>
+                        <a href="#"><span class="number-input">...</span></a>
+                        <a href="#"><span class="number-input">23</span></a>
+                        <a href="#"><svg class="padding-left" xmlns="http://www.w3.org/2000/svg" width="51" height="15"
+                                viewBox="0 0 51 15" fill="none">
+                                <path
+                                    d="M50.7071 8.07112C51.0976 7.6806 51.0976 7.04743 50.7071 6.65691L44.3431 0.292946C43.9526 -0.0975785 43.3195 -0.0975785 42.9289 0.292946C42.5384 0.68347 42.5384 1.31664 42.9289 1.70716L48.5858 7.36401L42.9289 13.0209C42.5384 13.4114 42.5384 14.0446 42.9289 14.4351C43.3195 14.8256 43.9526 14.8256 44.3431 14.4351L50.7071 8.07112ZM0 7.36401V8.36401H50V7.36401V6.36401H0V7.36401Z"
+                                    fill="#9F9F9F" />
+                            </svg></a>
+                    </div>
                 </div>
-            </form>
-            <div class="pages-numbers disp-flex">
-                <a href="#"><svg class="padding-right" xmlns="http://www.w3.org/2000/svg" width="51" height="15"
-                        viewBox="0 0 51 15" fill="none">
-                        <path
-                            d="M0.292892 8.07112C-0.0976295 7.6806 -0.0976295 7.04743 0.292892 6.65691L6.65685 0.292946C7.04738 -0.0975785 7.68054 -0.0975785 8.07107 0.292946C8.46159 0.68347 8.46159 1.31664 8.07107 1.70716L2.41422 7.36401L8.07107 13.0209C8.46159 13.4114 8.46159 14.0446 8.07107 14.4351C7.68054 14.8256 7.04738 14.8256 6.65685 14.4351L0.292892 8.07112ZM51 7.36401V8.36401H1V7.36401V6.36401H51V7.36401Z"
-                            fill="#9F9F9F" />
-                    </svg></a>
-                <a href="#"><span class="number-input">1</span></a>
-                <a href="#"><span class="number-input">2</span></a>
-                <a href="#"><span class="number-input">3</span></a>
-                <a href="#"><span class="number-input">...</span></a>
-                <a href="#"><span class="number-input">23</span></a>
-                <a href="#"><svg class="padding-left" xmlns="http://www.w3.org/2000/svg" width="51" height="15"
-                        viewBox="0 0 51 15" fill="none">
-                        <path
-                            d="M50.7071 8.07112C51.0976 7.6806 51.0976 7.04743 50.7071 6.65691L44.3431 0.292946C43.9526 -0.0975785 43.3195 -0.0975785 42.9289 0.292946C42.5384 0.68347 42.5384 1.31664 42.9289 1.70716L48.5858 7.36401L42.9289 13.0209C42.5384 13.4114 42.5384 14.0446 42.9289 14.4351C43.3195 14.8256 43.9526 14.8256 44.3431 14.4351L50.7071 8.07112ZM0 7.36401V8.36401H50V7.36401V6.36401H0V7.36401Z"
-                            fill="#9F9F9F" />
-                    </svg></a>
             </div>
         </div>
     </main>
