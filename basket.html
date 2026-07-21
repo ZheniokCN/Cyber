@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>E-com-Cyber - basket page</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -24,6 +26,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
     <div class="greybg"></div>
     <div class="dark-bgc"></div>
@@ -53,7 +56,7 @@
                         </ul>
                     </div>
                     <ul class="icons disp-flex">
-                        <li><a href="#"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
+                        <li><a href="basket.html"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
                         <li><a href="wishlist.html"><img class="svg" src="img/heart.svg" alt="heart"></a></li>
                         <li><a href="#"><img class="svg" src="img/log-in.svg" alt="log-in"></a></li>
                     </ul>
@@ -116,7 +119,28 @@
         </div>
     </header>
     <main>
-
+        <div class="wrapper">
+            <div class="active-page">
+                <div class="active-page-div">
+                    <span class="grey-sp"><a href="index.html">home</a></span><span class="grey-sp">/</span><span
+                        class="dark-sp"><a href="about_us.html">basket</a></span>
+                </div>
+            </div>
+            <div class="grid-basket">
+                <div class="grid-row-tree">
+                    <div>
+                        <picture>
+                              <img src="img/iphone-basket.png" alt="iphone">
+                        </picture>
+                        <h2>Смартфон Apple iPhone 17 Pro 256GB Deep Blue</h2>
+                        <p><span class="grey-text">Color:</span>dark blue</p>
+                        <p><span class="grey-text">Storage size:</span>256Gb</p>
+                        <input type="number">
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <nav class="wrapper">
@@ -162,32 +186,7 @@
             </div>
         </nav>
     </footer>
-    <script>
-        const dark = document.querySelector(".dark-bgc"),
-            grey = document.querySelector(".greybg"),
-            burger = document.querySelector(".for-menu-header"),
-            menu = document.querySelector(".list-header"),
-            cancel = document.querySelector(".cancel"),
-            list = document.querySelector(".phones-hover"),
-            item = document.querySelector(".item-header-relative")
-
-        item.addEventListener("click", function () {
-            list.style.top = "100%"
-            list.style.opacity = "1"
-            grey.style.display = "block"
-        })
-
-        burger.addEventListener("click", function () {
-            menu.style.left = "0";
-            dark.style.display = "block"
-        })
-
-        function cancelBurger() {
-            menu.style.left = "-100%";
-            dark.style.display = "none"
-        }
-        cancel.addEventListener("click", cancelBurger)
-        dark.addEventListener("click", cancelBurger)
-    </script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

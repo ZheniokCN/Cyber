@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                     <ul class="icons disp-flex">
-                        <li><a href="#"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
+                        <li><a href="basket.html"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
                         <li><a href="wishlist.html"><img class="svg" src="img/heart.svg" alt="heart"></a></li>
                         <li><a href="#"><img class="svg" src="img/log-in.svg" alt="log-in"></a></li>
                     </ul>
@@ -236,33 +236,7 @@
             </div>
         </nav>
     </footer>
-    <script>
-        const dark = document.querySelector(".dark-bgc"),
-            grey = document.querySelector(".greybg"),
-            burger = document.querySelector(".for-menu-header"),
-            menu = document.querySelector(".list-header"),
-            cancel = document.querySelector(".cancel"),
-            list = document.querySelector(".phones-hover"),
-            item = document.querySelector(".item-header-relative")
-
-        item.addEventListener("click", function () {
-            list.style.top = "100%"
-            list.style.opacity = "1"
-            grey.style.display = "block"
-        })
-
-        burger.addEventListener("click", function () {
-            menu.style.left = "0";
-            dark.style.display = "block"
-        })
-
-        function cancelBurger() {
-            menu.style.left = "-100%";
-            dark.style.display = "none"
-        }
-        cancel.addEventListener("click", cancelBurger)
-        dark.addEventListener("click", cancelBurger)
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
