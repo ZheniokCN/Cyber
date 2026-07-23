@@ -9,7 +9,7 @@ const dark = document.querySelector(".dark-bgc"),
     list = document.querySelector(".phones-hover"),
     SearchPhone = document.querySelector(".search-phone"),
     item = document.querySelector(".item-header-relative")
-    search = document.querySelector(".search-bl"),
+    search = document.querySelector(".search-mobile"),
 
 item.addEventListener("click", function () {
     list.style.top = "100%"
@@ -23,7 +23,7 @@ filter.addEventListener("click", function () {
 })
 
 SearchPhone.addEventListener("click", function () {
-    search.style.left = "0"
+    search.style.left = "10px"
 })
 
 item.addEventListener("click", function () {
