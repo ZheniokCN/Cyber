@@ -216,6 +216,7 @@ a {
 }
 
 .search-input {
+    min-width: 25vw;
     width: 100%;
     min-height: 4vh;
     border-radius: 5rem;
@@ -246,7 +247,7 @@ a {
 }
 
 .search-adaptive {
-    padding-top: 10rem;
+    padding: 10rem 0;
 }
 
 
@@ -1522,10 +1523,6 @@ a {
 
 .grey-text {
     color: var(--gray-middle, #9F9F9F);
-    font-size: 16rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
 
 .dark-text {
@@ -1785,7 +1782,8 @@ a {
 }
 
 .border-cat {
-    padding: 29rem 0;
+    padding-bottom: 29rem;
+    margin-bottom: 29rem;
     border-bottom: 1px solid #9f9f9f;
 }
 
@@ -1893,6 +1891,206 @@ a {
     top: 50%;
     transform: translateY(-50%);
     right: 15px;
+}
+
+/* basket */
+
+/* no wrap text */
+.no-wrap-text {
+    white-space: nowrap;
+}
+
+/*  */
+
+.price-input-basket {
+    font-size: 26rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.checkout-btn {
+    color: #FFF;
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid var(--text-color, #171717);
+    background: var(--text-color, #171717);
+    width: 100%;
+    padding: 15rem 0;
+}
+
+.smaller-price-input-basket {
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.space-beetwen {
+    justify-content: space-between;
+}
+
+.input-basket-user-info {
+    border-radius: 10rem;
+    border: 1px solid #9F9F9F;
+    padding: 44rem 15rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.for-padding-price {
+    padding-bottom: 22rem;
+}
+
+.head-input-basket {
+    font-size: 28rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.head-input-basket-first {
+    padding-bottom: 30rem;
+}
+
+.padding-from-head {
+    padding: 30rem 0 32rem;
+}
+
+.padding-from-head-to-btn {
+    padding: 30rem 0 56rem;
+}
+
+.text-for-input-basket {
+    padding-bottom: 12rem;
+}
+
+.text-for-input-basket-second {
+    padding-top: 25rem;
+}
+
+.grid-basket {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50rem;
+    justify-content: space-between;
+    padding-bottom: 100rem;
+}
+
+.grid-row-tree {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20rem;
+    min-width: 500px;
+    height: 100%;
+}
+
+.scroll-adaptive {
+    overflow-x: scroll;
+    display: inline-block;
+}
+
+.aspect-img-basket img {
+    aspect-ratio: 17/25;
+    max-width: 102rem;
+    width: 100%;
+}
+
+.aspect-img-basket {
+    max-width: 102rem;
+}
+
+.second-head-basket {
+    max-width: 240rem;
+    font-size: 18rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.22;
+}
+
+.info-basket {
+    font-size: 14rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.info-div-basket {
+    padding-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+}
+
+.enter-promo {
+    border-radius: 5px;
+    border: 1px solid #9F9F9F;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 50rem;
+    padding: 0 20rem;
+}
+
+.enter-promo-label {
+    left: 20rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.standart-text {
+    font-size: 18rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-submit-basket {
+    appearance: none;
+    min-width: 26px;
+    width: 100%;
+    padding: 2rem;
+    font-size: 24rem;
+    border: 1px solid #9f9f9f;
+    border-radius: 7rem;
+}
+
+.label-basket {
+    font-size: 14rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 6rem;
+}
+
+.input-basket {
+    appearance: none;
+    outline: none;
+    border: none;
+    max-width: 6rem;
+}
+
+.price-basket {
+    font-size: 30rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.product-page {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #F1F1F1;
+    padding: 25rem 30rem;
+    border-radius: 8rem;
+}
+
+.product-info-flex {
+    justify-content: space-between;
+    height: 100%;
 }
 
 @media screen and (min-width:320px) {
@@ -2099,6 +2297,21 @@ a {
 
 }
 
+@media screen and (min-width:1050px) {
+    .grid-basket {
+        grid-template-columns: 1fr 490rem;
+        gap: 90rem;
+    }
+
+    .input-basket-user-info {
+        padding: 44rem 35rem;
+    }
+
+    .scroll-adaptive {
+        overflow-x: auto;
+    }
+}
+
 @media screen and (min-width:1200px) {
     .grid-for-buttons {
         grid-template-columns: repeat(2, 1fr);
@@ -2197,6 +2410,10 @@ a {
 @media screen and (min-width:3000px) {
     html {
         font-size: 1.3px;
+    }
+
+    .search-input {
+        min-width: 18vw;
     }
 
     .wrapper-con {
