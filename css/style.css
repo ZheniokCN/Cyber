@@ -1523,6 +1523,7 @@ a {
 
 .grey-text {
     color: var(--gray-middle, #9F9F9F);
+    font-size: 16rem;
 }
 
 .dark-text {
@@ -1916,10 +1917,16 @@ a {
     font-weight: 400;
     line-height: normal;
     border-radius: 5px;
-    border: 1px solid var(--text-color, #171717);
-    background: var(--text-color, #171717);
+    border: 1px solid #171717;
+    background: #171717;
     width: 100%;
     padding: 15rem 0;
+    transition: 0.4s;
+}
+
+.checkout-btn:hover{
+    background:#FFF;
+    color: #171717;
 }
 
 .smaller-price-input-basket {

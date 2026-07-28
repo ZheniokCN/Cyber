@@ -10,12 +10,13 @@ const dark = document.querySelector(".dark-bgc"),
     SearchPhone = document.querySelector(".search-phone"),
     item = document.querySelector(".item-header-relative")
     search = document.querySelector(".search-mobile"),
+    photoBtn = document.querySelectorAll(".buttons-for-img-change"),
 
-item.addEventListener("click", function () {
-    list.style.top = "100%"
-    list.style.opacity = "1"
-    grey.style.display = "block"
-})
+    item.addEventListener("click", function () {
+        list.style.top = "100%"
+        list.style.opacity = "1"
+        grey.style.display = "block"
+    })
 filter.addEventListener("click", function () {
     filters.style.left = "0"
     filters.style.opacity = "1"
@@ -36,6 +37,13 @@ item.addEventListener("click", function () {
 burger.addEventListener("click", function () {
     menu.style.left = "0";
     dark.style.display = "block"
+})
+
+photoBtn.forEach(item => {
+    item.onclick = () => {
+        let imgSrc = item.getAttribute("data-img")
+        imgCont.setAttribute("src", imgSrc)
+    }
 })
 
 function cancelBurger() {
