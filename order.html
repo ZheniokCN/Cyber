@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
-    <title>E-com-Cyber - techical shop, apple, android, freeges, contact</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>Complete your order with E-com Cyber</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,11 +21,12 @@
                             <img class="width-one-hunred logo" src="img/logo-head.svg" alt="logo">
                         </picture>
                     </a>
-                    <div class="search disp-flex">
-                        <picture>
+                    <div class="position-r search-bl">
+                        <input class="appearance search-input" type="search" name="search" id="search">
+                        <label class="search position-a" for="search">
                             <img src="img/search.svg" alt="search">
-                        </picture>
-                        <p>Search</p>
+                            Search
+                        </label>
                     </div>
                     <div>
                         <ul class="list-header disp-flex">
@@ -36,7 +38,7 @@
                         </ul>
                     </div>
                     <ul class="icons disp-flex">
-                        <li><a href="#"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
+                        <li><a href="basket.html"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
                         <li><a href="wishlist.html"><img class="svg" src="img/heart.svg" alt="heart"></a></li>
                         <li><a href="#"><img class="svg" src="img/log-in.svg" alt="log-in"></a></li>
                     </ul>
@@ -54,7 +56,7 @@
                                 <img class="svg-rotate" src="img/arrow.svg" alt="arrow">
                             </a>
                             <ul class="phones-hover">
-                                <li><a href="product.html">iPhone</a></li>
+                                <li><a href="catalog.html">iPhone</a></li>
                                 <li><a href="#">Samsung</a></li>
                                 <li><a href="#">Xiaomi</a></li>
                                 <li><a href="#">Oppo</a></li>
@@ -109,58 +111,89 @@
             </div>
         </div>
     </header>
-    <main class="main-c">
+    <main>
         <div class="wrapper">
-            <div class="active-page">
-                <div class="active-page-div">
-                    <span class="grey-sp"><a href="index.html">home</a></span><span class="grey-sp">/</span><span
-                        class="dark-sp"><a href="contact.html">contact</a></span>
-                </div>
-            </div>
-            <div class="wrapper-con">
-                <div class="main-block-contact">
-                    <div class="for-phone-info">
-                        <div class="info-contact">
-                            <div class="blocks-of-info">
-                                <h1>Address</h1>
-                                <ul class="list-contact gap-fifteen">
-                                    <li>
-                                        <address>Lviv, Patona st. 122</address>
-                                    </li>
-                                    <li>
-                                        <address>Lviv, Schevchenka st. 26</address>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="blocks-of-info">
-                                <h2>Phone</h2>
-                                <ul class="gap-fifteen list-contact">
-                                    <li><a href="tel:+380778767656">+380 77 876 76 56</a></li>
-                                    <li><a href="tel:+380778767666">+380 77 876 76 66</a></li>
-                                </ul>
-                            </div>
-                            <div class="blocks-of-info">
-                                <h2>Email</h2>
-                                <a href="mailto: cyberstore@gmail.com">cyberstore@gmail.com</a>
-                            </div>
-                            <div class="blocks-of-info">
-                                <h2>Social media</h2>
-                                <ul class="disp-flex gap-thirty">
-                                    <li><a href="#"><img class="svg" src="img/social-dark-ins.svg" alt="instagram"></a>
-                                    </li>
-                                    <li><a href="#"><img class="svg" src="img/social-you-tube.svg" alt="you-tube"></a>
-                                    </li>
-                                    <li><a href="#"><img class="svg" src="img/facebook.svg" alt="facebook"></a></li>
-                                    <li><a href="#"><img class="svg" src="img/threads.svg" alt="threads"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="img-cont">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=14I2Geu9STcNlNq7MCMesVhKTH2xEFos&ehbc=2E312F" class="geo-loc"></iframe>
-                        </div>
+            <div class="disp-flex space-between">
+                <div class="active-page">
+                    <div class="active-page-div">
+                        <span class="grey-sp"><a href="index.html">home</a></span><span class="grey-sp">/</span><span
+                            class="grey-sp"><a href="index.html">basket</a></span><span class="grey-sp">/</span><span
+                            class="dark-sp"><a href="about_us.html">complete your order</a></span>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="wrapper-or">
+            <form action="#" method="post">
+                <h1 class="main-head-order">Your details</h1>
+                <div class="grid-details">
+                    <div><label for="first-name" class="text-order label-order">First name*</label><input id="first-name"
+                            type="text" class="appearance input-order text-order grey-text"
+                            placeholder="Enter your first name"></div>
+                    <div><label for="second-name" class="text-order label-order">Last name*</label><input id="second-name"
+                            type="text" class="appearance input-order text-order grey-text"
+                            placeholder="Enter your last name"></div>
+                    <div><label for="Phone" class="text-order label-order">Phone number*</label><input id="Phone"
+                            type="number" class="appearance input-order text-order grey-text"
+                            placeholder="Enter your phone number"></div>
+                    <div><label for="email" class="text-order label-order">E-mail</label><input id="email" type="email"
+                            class="appearance input-order text-order grey-text" placeholder="Enter your email"></div>
+                </div>
+                <div class="grid-delivery">
+                    <div class="position-r">
+                        <input class="appearance input-delivery position-r" type="radio" id="ukr">
+                        <picture class="position-a img-ukr-poshta">
+                            <img src="img/ukr-delivery.png" alt="ukr-pochta">
+                        </picture>
+                        <label for="ukr">
+                        </label>
+                    </div>
+                    <div class="position-r">
+                        <input class="appearance input-delivery position-r" type="radio" id="nova" checked>
+                        <picture class="position-a img-nova-poshta">
+                            <img src="img/nova-poshta.png" alt="nova-poshta">
+                        </picture>
+                        <label for="nova"></label>
+                    </div>
+                    <div class="position-r">
+                        <input class="appearance input-delivery position-r" type="radio" id="curier">
+                        <div class="disp-flex courier-flex position-a">
+                            <img class="svg-delivery" src="img/delivery.svg" alt="delivery">
+                            <div>
+                                <p class="bold-text-courier">Courier</p>
+                                <p class="text-courier">delivery</p>
+                            </div>
+                        </div>
+                        <label for="curier"></label>
+                    </div>
+                </div>
+                <div class="grid-details">
+                    <div><p class="text-order label-order">Country*</p><select class="appearance input-order text-order grey-text" name="country" placeholder="Select your country">
+                        <option class="text-order" value="Select your country" disabled selected>Select your country</option>
+                    </select></div>
+                    <div><p class="text-order label-order">State*</p><select class="appearance input-order text-order grey-text" name="state" placeholder="Select your state"><option class="text-order" value="Select your country" disabled selected>Select your state</option></select></div>
+                    <div><p class="text-order label-order">City/village*</p><select class="appearance input-order text-order grey-text" name="city" placeholder="Select your city/village">
+                        <option class="text-order" value="Select your country" disabled selected>Select your city/village</option>
+                    </select></div>
+                    <div><p class="text-order label-order">Post office number*</p><select class="appearance input-order text-order grey-text" name="office" placeholder="Select post office number">
+                        <option class="text-order" value="Select your country" disabled selected>Select post office number</option>
+                    </select></div>
+                </div>
+                <h2 class="main-head-order">Payment method</h2>
+                <div class="grid-delivery">
+                    <div class="disp-flex"><input class="appearance order-input" type="radio" id="bank"><label class="text-payment" for="bank">Bank transfer</label></div>
+                    <div class="disp-flex"><input class="appearance order-input" type="radio" id="cash"><label class="text-payment" for="cash">Cash on delivery</label></div>
+                    <div class="disp-flex"><input class="appearance order-input" type="radio" id="ligpay"><label class="text-payment" for="ligpay">LigPay</label></div>
+                </div>
+                <p class="text-order comment-head">Comment</p>
+                <textarea class="comment appearance" name="comment" id="comment" placeholder="Leave your comment"></textarea>
+                <div class="wrapper">
+                    <div class="grid-btns-order">
+                        <button class="appearance button-or button-or-white" type="reset">Back to basket</button>
+                        <button class="appearance button-or button-or-black" type="submit">Confirm</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
     <footer class="footer">
@@ -207,33 +240,7 @@
             </div>
         </nav>
     </footer>
-    <script>
-        const dark = document.querySelector(".dark-bgc"),
-            grey = document.querySelector(".greybg"),
-            burger = document.querySelector(".for-menu-header"),
-            menu = document.querySelector(".list-header"),
-            cancel = document.querySelector(".cancel"),
-            list = document.querySelector(".phones-hover"),
-            item = document.querySelector(".item-header-relative")
-
-        item.addEventListener("click", function () {
-            list.style.top = "100%"
-            list.style.opacity = "1"
-            grey.style.display = "block"
-        })
-
-        burger.addEventListener("click", function () {
-            menu.style.left = "0";
-            dark.style.display = "block"
-        })
-
-        function cancelBurger() {
-            menu.style.left = "-100%";
-            dark.style.display = "none"
-        }
-        cancel.addEventListener("click", cancelBurger)
-        dark.addEventListener("click", cancelBurger)
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
