@@ -95,6 +95,12 @@ button {
     width: 90%;
 }
 
+.wrapper-basket{
+    max-width: 1430px;
+    margin: 0 auto;
+    width: 90%;
+}
+
 ul,
 ol {
     list-style: none;
@@ -1924,8 +1930,8 @@ a {
     transition: 0.4s;
 }
 
-.checkout-btn:hover{
-    background:#FFF;
+.checkout-btn:hover {
+    background: #FFF;
     color: #171717;
 }
 
@@ -1991,23 +1997,12 @@ a {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 20rem;
-    min-width: 500px;
     height: 100%;
 }
 
-.scroll-adaptive {
-    overflow-x: scroll;
-    display: inline-block;
-}
-
 .aspect-img-basket img {
-    aspect-ratio: 17/25;
-    max-width: 102rem;
+    aspect-ratio: 102/150;
     width: 100%;
-}
-
-.aspect-img-basket {
-    max-width: 102rem;
 }
 
 .second-head-basket {
@@ -2061,7 +2056,14 @@ a {
     padding: 2rem;
     font-size: 24rem;
     border: 1px solid #9f9f9f;
+    color: #9F9F9F;
     border-radius: 7rem;
+}
+
+.input-basket, .label-basket {
+    background-color: #F1F1F1;
+    border: none;
+    outline: none;
 }
 
 .label-basket {
@@ -2070,6 +2072,7 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 6rem;
+    font-weight: 500;
 }
 
 .input-basket {
@@ -2095,10 +2098,44 @@ a {
     border-radius: 8rem;
 }
 
+.union{
+    right: 29rem;
+    top: 20rem;
+}
+
 .product-info-flex {
     justify-content: space-between;
     height: 100%;
+    flex-wrap: wrap;
 }
+
+/* login/singin */
+.button-switch {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin: 20px;
+}
+
+/* login */
+.log-in {
+    background-color: #000;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/* singin */
+.sing-in {
+    background-color: #ccc;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/*  */
 
 @media screen and (min-width:320px) {
     .icons {
@@ -2314,8 +2351,8 @@ a {
         padding: 44rem 35rem;
     }
 
-    .scroll-adaptive {
-        overflow-x: auto;
+    .product-info-flex {
+        flex-wrap: nowrap;
     }
 }
 
@@ -2454,5 +2491,9 @@ a {
     .socials img,
     .svg {
         min-width: 40rem;
+    }
+
+    .wrapper-basket{
+        max-width: 1600px;
     }
 }

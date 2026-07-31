@@ -29,6 +29,16 @@
 <body>
     <div class="greybg"></div>
     <div class="dark-bgc"></div>
+    <div lass="log-in-and-sing-in">
+        <div class="log-in block-reg">
+
+        </div>
+        <div class="sing-in block-reg">
+
+        </div>
+        <a class="button-switch active" data-reg="singIn" href="#">Log in</a>
+        <a class="button-switch" data-reg="singUp" href="#">Sing up</a>
+    </div>
     <header class="header">
         <nav class="wrapper">
             <div class="for-aling-items">
@@ -136,114 +146,125 @@
                         class="dark-sp"><a href="about_us.html">basket</a></span>
                 </div>
             </div>
+        </div>
+        <div class="wrapper-basket">
             <div class="grid-basket">
-                <div class="scroll-adaptive">
-                    <div class="grid-row-tree">
-                        <form action="#" method="post">
-                            <div class="product-page">
-                                <div class="disp-flex gap-fifteen product-info-flex">
-                                    <div class="disp-flex gap-fifteen">
-                                        <picture class="width-one-hunred aspect-img-basket">
-                                            <img src="img/iphone-basket.png" alt="iphone">
-                                        </picture>
-                                        <div>
-                                            <h1 class="second-head-basket">Смартфон Apple iPhone 17 Pro 256GB Deep Blue</h1>
-                                            <div class="info-div-basket">
-                                                <p class="info-basket"><span class="grey-text">Color: </span>dark blue</p>
-                                                <p class="info-basket"><span class="grey-text">Storage size: </span>256Gb
-                                                </p>
-                                            </div>
+                <div class="grid-row-tree">
+                    <form action="#" method="post">
+                        <div class="product-page position-r">
+                            <svg class="position-a union" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7343 0.108944C14.8736 -0.0363151 15.0999 -0.036288 15.2392 0.108944C15.3785 0.254217 15.3785 0.490039 15.2392 0.635311L8.50382 7.65777L15.8954 15.3658C16.0346 15.5111 16.0347 15.7459 15.8954 15.8912C15.7561 16.0364 15.5308 16.0364 15.3915 15.8912L7.99991 8.18316L0.608308 15.8912C0.468989 16.0364 0.243689 16.0364 0.104402 15.8912C-0.0348358 15.7459 -0.0347652 15.5111 0.104402 15.3658L7.49503 7.65777L0.760652 0.635311C0.621338 0.490039 0.621338 0.254217 0.760652 0.108944C0.899966 -0.0363077 1.12623 -0.0363216 1.26553 0.108944L7.99991 7.1314L14.7343 0.108944Z" fill="#9F9F9F" />
+                            </svg>
+                            <div class="disp-flex gap-fifteen product-info-flex">
+                                <div class="disp-flex gap-fifteen">
+                                    <picture class="aspect-img-basket">
+                                        <img src="img/iphone-basket.png" alt="iphone">
+                                    </picture>
+                                    <div>
+                                        <h2 class="second-head-basket">Смартфон Apple iPhone 17 Pro 256GB Deep Blue</h2>
+                                        <div class="info-div-basket">
+                                            <p class="info-basket"><span class="grey-text">Color: </span>dark blue</p>
+                                            <p class="info-basket"><span class="grey-text">Storage size: </span>256Gb
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="disp-flex gap-fifteen">
-                                        <button class="button-submit-basket" type="submit">-</button>
-                                        <div class="position-r">
-                                            <label class="label-basket position-a" for="number-basket">1</label>
-                                            <input class="input-basket" type="number" name="number-basket"
-                                                id="number-basket">
-                                        </div>
-                                        <button class="button-submit-basket" type="submit">+</button>
-                                    </div>
-                                    <div class="price-basket no-wrap-text">$ 1400</div>
                                 </div>
-                            </div>
-                        </form>
-                        <form action="#" method="post">
-                            <div class="product-page">
-                                <div class="disp-flex gap-fifteen product-info-flex">
-                                    <div class="disp-flex gap-fifteen">
-                                        <picture class="width-one-hunred aspect-img-basket">
-                                            <img src="img/iphone-basket.png" alt="iphone">
-                                        </picture>
-                                        <div>
-                                            <h2 class="second-head-basket">Смартфон Apple iPhone 17 Pro 256GB Deep Blue</h2>
-                                            <div class="info-div-basket">
-                                                <p class="info-basket"><span class="grey-text">Color: </span>dark blue</p>
-                                                <p class="info-basket"><span class="grey-text">Storage size: </span>256Gb
-                                                </p>
-                                            </div>
-                                        </div>
+                                <div class="disp-flex gap-fifteen">
+                                    <button class="button-submit-basket" type="submit">-</button>
+                                    <div class="position-r">
+                                        <label class="label-basket position-a" for="number-basket">1</label>
+                                        <input class="input-basket" type="number" name="number-basket"
+                                            id="number-basket">
                                     </div>
-                                    <div class="disp-flex gap-fifteen">
-                                        <button class="button-submit-basket" type="submit">-</button>
-                                        <div class="position-r">
-                                            <label class="label-basket position-a" for="number-basket">1</label>
-                                            <input class="input-basket" type="number" name="number-basket"
-                                                id="number-basket">
-                                        </div>
-                                        <button class="button-submit-basket" type="submit">+</button>
-                                    </div>
-                                    <div class="price-basket no-wrap-text">$ 1400</div>
+                                    <button class="button-submit-basket" type="submit">+</button>
                                 </div>
+                                <div class="price-basket no-wrap-text">$ 1400</div>
                             </div>
-                        </form>
-                        <form action="#" method="post">
-                            <div class="product-page">
-                                <div class="disp-flex gap-fifteen product-info-flex">
-                                    <div class="disp-flex gap-fifteen">
-                                        <picture class="width-one-hunred aspect-img-basket">
-                                            <img src="img/iphone-basket.png" alt="iphone">
-                                        </picture>
-                                        <div>
-                                            <h2 class="second-head-basket">Смартфон Apple iPhone 17 Pro 256GB Deep Blue</h2>
-                                            <div class="info-div-basket">
-                                                <p class="info-basket"><span class="grey-text">Color: </span>dark blue</p>
-                                                <p class="info-basket"><span class="grey-text">Storage size: </span>256Gb
-                                                </p>
-                                            </div>
+                        </div>
+                    </form>
+                    <form action="#" method="post">
+                        <div class="product-page position-r">
+                            <svg class="position-a union" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7343 0.108944C14.8736 -0.0363151 15.0999 -0.036288 15.2392 0.108944C15.3785 0.254217 15.3785 0.490039 15.2392 0.635311L8.50382 7.65777L15.8954 15.3658C16.0346 15.5111 16.0347 15.7459 15.8954 15.8912C15.7561 16.0364 15.5308 16.0364 15.3915 15.8912L7.99991 8.18316L0.608308 15.8912C0.468989 16.0364 0.243689 16.0364 0.104402 15.8912C-0.0348358 15.7459 -0.0347652 15.5111 0.104402 15.3658L7.49503 7.65777L0.760652 0.635311C0.621338 0.490039 0.621338 0.254217 0.760652 0.108944C0.899966 -0.0363077 1.12623 -0.0363216 1.26553 0.108944L7.99991 7.1314L14.7343 0.108944Z" fill="#9F9F9F" />
+                            </svg>
+                            <div class="disp-flex gap-fifteen product-info-flex">
+                                <div class="disp-flex gap-fifteen">
+                                    <picture class="aspect-img-basket">
+                                        <img src="img/iphone-basket.png" alt="iphone">
+                                    </picture>
+                                    <div>
+                                        <h2 class="second-head-basket">Смартфон Apple iPhone 17 Pro 256GB Deep Blue</h2>
+                                        <div class="info-div-basket">
+                                            <p class="info-basket"><span class="grey-text">Color: </span>dark blue</p>
+                                            <p class="info-basket"><span class="grey-text">Storage size: </span>256Gb
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="disp-flex gap-fifteen">
-                                        <button class="button-submit-basket" type="submit">-</button>
-                                        <div class="position-r">
-                                            <label class="label-basket position-a" for="number-basket">1</label>
-                                            <input class="input-basket" type="number" name="number-basket"
-                                                id="number-basket">
-                                        </div>
-                                        <button class="button-submit-basket" type="submit">+</button>
-                                    </div>
-                                    <div class="price-basket no-wrap-text">$ 1400</div>
                                 </div>
+                                <div class="disp-flex gap-fifteen">
+                                    <button class="button-submit-basket" type="submit">-</button>
+                                    <div class="position-r">
+                                        <label class="label-basket position-a" for="number-basket">1</label>
+                                        <input class="input-basket" type="number" name="number-basket"
+                                            id="number-basket">
+                                    </div>
+                                    <button class="button-submit-basket" type="submit">+</button>
+                                </div>
+                                <div class="price-basket no-wrap-text">$ 1400</div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
+                    <form action="#" method="post">
+                        <div class="product-page position-r">
+                            <svg class="position-a union" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7343 0.108944C14.8736 -0.0363151 15.0999 -0.036288 15.2392 0.108944C15.3785 0.254217 15.3785 0.490039 15.2392 0.635311L8.50382 7.65777L15.8954 15.3658C16.0346 15.5111 16.0347 15.7459 15.8954 15.8912C15.7561 16.0364 15.5308 16.0364 15.3915 15.8912L7.99991 8.18316L0.608308 15.8912C0.468989 16.0364 0.243689 16.0364 0.104402 15.8912C-0.0348358 15.7459 -0.0347652 15.5111 0.104402 15.3658L7.49503 7.65777L0.760652 0.635311C0.621338 0.490039 0.621338 0.254217 0.760652 0.108944C0.899966 -0.0363077 1.12623 -0.0363216 1.26553 0.108944L7.99991 7.1314L14.7343 0.108944Z" fill="#9F9F9F" />
+                            </svg>
+                            <div class="disp-flex gap-fifteen product-info-flex">
+                                <div class="disp-flex gap-fifteen">
+                                    <picture class=" aspect-img-basket">
+                                        <img src="img/iphone-basket.png" alt="iphone">
+                                    </picture>
+                                    <div>
+                                        <h2 class="second-head-basket">Смартфон Apple iPhone 17 Pro 256GB Deep Blue</h2>
+                                        <div class="info-div-basket">
+                                            <p class="info-basket"><span class="grey-text">Color: </span>dark blue</p>
+                                            <p class="info-basket"><span class="grey-text">Storage size: </span>256Gb
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="disp-flex gap-fifteen">
+                                    <button class="button-submit-basket" type="submit">-</button>
+                                    <div class="position-r">
+                                        <label class="label-basket position-a" for="number-basket">1</label>
+                                        <input class="input-basket" type="number" name="number-basket"
+                                            id="number-basket">
+                                    </div>
+                                    <button class="button-submit-basket" type="submit">+</button>
+                                </div>
+                                <div class="price-basket no-wrap-text">$ 1400</div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <form action="#" method="post">
                     <div class="input-basket-user-info">
-                        <h2 class="head-input-basket head-input-basket-first">
+                        <h1 class="head-input-basket head-input-basket-first">
                             Order summary
-                        </h2>
+                        </h1>
                         <p class="standart-text text-for-input-basket">Promo code</p>
                         <div class="position-r promo-input-block">
                             <input class="appearance-none enter-promo standart-text" type="text" name="enter-promo"
                                 id="enter-promo">
-                            <label class="standart-text enter-promo-label grey-text position-a" for="enter-promo">Enter your
+                            <label class="standart-text enter-promo-label grey-text position-a" for="enter-promo">Enter
+                                your
                                 promo code</label>
                         </div>
-                        <p class="standart-text text-for-input-basket text-for-input-basket-second">Bonus card number</p>
+                        <p class="standart-text text-for-input-basket text-for-input-basket-second">Bonus card number
+                        </p>
                         <div class="position-r promo-input-block">
-                            <input class="appearance-none enter-promo standart-text" type="number" name="enter-number-phone"
-                                id="enter-number-phone">
+                            <input class="appearance-none enter-promo standart-text" type="number"
+                                name="enter-number-phone" id="enter-number-phone">
                             <label class="standart-text enter-promo-label grey-text position-a"
                                 for="enter-number-phone">Enter your bonus card number</label>
                         </div>

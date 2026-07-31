@@ -7,24 +7,36 @@ const dark = document.querySelector(".dark-bgc"),
     cancel = document.querySelector(".cancel"),
     canfilter = document.querySelector(".cancel-filter"),
     list = document.querySelector(".phones-hover"),
-    SearchPhone = document.querySelector(".search-phone"),
-    item = document.querySelector(".item-header-relative")
+    item = document.querySelector(".item-header-relative"),
     search = document.querySelector(".search-mobile"),
     photoBtn = document.querySelectorAll(".buttons-for-img-change"),
+    buttons = document.querySelectorAll(".button-switch"),
+    blocks = document.querySelectorAll(".block-reg")
 
-    item.addEventListener("click", function () {
-        list.style.top = "100%"
-        list.style.opacity = "1"
-        grey.style.display = "block"
+if (filter) {
+    filter.addEventListener("click", function () {
+        filters.style.left = "0"
+        filters.style.opacity = "1"
+        dark.style.display = "block"
     })
-filter.addEventListener("click", function () {
-    filters.style.left = "0"
-    filters.style.opacity = "1"
-    dark.style.display = "block"
-})
 
-SearchPhone.addEventListener("click", function () {
-    search.style.left = "10px"
+    function cancelFilter() {
+        filters.style.left = "-200%";
+        dark.style.display = "none"
+    }
+}
+
+buttons.forEach(button => {
+    button.onclick = () => {
+        blocks.forEach(block => {
+            block.classlist.remove("active")
+            if (block.classList.contains(button.dataset.reg)) {
+                if (!block.classList.contains("active")) {
+                    block.classList.add("active")
+                }
+            }
+        })
+    }
 })
 
 item.addEventListener("click", function () {
@@ -51,17 +63,7 @@ function cancelBurger() {
     dark.style.display = "none"
 }
 
-function cancelSearch() {
-    filters.style.left = "-200%";
-    dark.style.display = "none"
-}
-
-function cancelFilter() {
-    search.style.left = "-350%"
-}
-
-cancel.addEventListener("click", cancelBurger)
+cancel.addEventListener("click", cancelBurger);
+dark.addEventListener("click", cancelBurger);
+dark.addEventListener("click", cancelFilter);
 canfilter.addEventListener("click", cancelFilter)
-dark.addEventListener("click", cancelBurger)
-dark.addEventListener("click", cancelFilter)
-SearchPhone.addEventListener("click", cancelSearch)
