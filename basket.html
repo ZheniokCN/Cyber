@@ -7,37 +7,43 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>E-com-Cyber - basket page</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class="position-r">
     <div class="greybg"></div>
     <div class="dark-bgc"></div>
-    <div lass="log-in-and-sing-in">
-        <div class="log-in block-reg">
+    <div class="popup">
+        <div class="grid-button-popup">
+            <a class="button-switch active" data-reg="singIn" href="#">Log in</a>
+            <a class="button-switch" data-reg="singUp" href="#">Sing up</a>
+        </div>
+        <div class="singIn block-reg active">
+            <div class="padding-bottom-20rem"><label class="label-popup" for="EmailPhone">E-mail or phone</label>
+            <input class="appearance input-popup" type="text" name="EmailPhone" id="EmailPhone" placeholder="Enter your email or phone"></div>
+            <div class="padding-bottom-17rem"><label class="label-popup" for="password">Password</label>
+            <input class="appearance input-popup" type="password" name="password" id="password" placeholder="*********"></div>
+            <a class="grey-text forgot-password disp-block" href="#">Forgot password?</a>
+            <a class="button-popup disp-block" data-reg="singIn" href="#">Log in</a>
+        </div>
+        <div class="singUp block-reg">
+            <div class="padding-bottom-20rem"><label class="label-popup" for="firstName">First name</label>
+            <input class="appearance input-popup" type="text" name="EmailPhone" id="firstName" placeholder="Enter your first name"></div>
+            <div class="padding-bottom-20rem"><label class="label-popup" for="second-name">second name</label>
+            <input class="appearance input-popup" type="text" name="EmailPhone" id="second-name" placeholder="Enter your second name"></div>
+            <div class="padding-bottom-20rem"><label class="label-popup" for="EmailPhone">E-mail or phone</label>
+            <input class="appearance input-popup" type="text" name="EmailPhone" id="EmailPhone" placeholder="Enter your email or phone"></div>
+            <div class="padding-bottom-20rem"><label class="label-popup" for="password">Password</label>
+            <input class="appearance input-popup" type="password" name="password" id="password" placeholder="*********"></div>
+            <div class="padding-bottom-30rem"><label class="label-popup" for="repeat-password">Repeat password</label>
+            <input class="appearance input-popup" type="password" name="repeat-password" id="repeat-password" placeholder="*********"></div>
+            <a class="button-popup disp-block" data-reg="singIn" href="#">Sign up</a>
 
         </div>
-        <div class="sing-in block-reg">
-
-        </div>
-        <a class="button-switch active" data-reg="singIn" href="#">Log in</a>
-        <a class="button-switch" data-reg="singUp" href="#">Sing up</a>
     </div>
     <header class="header">
         <nav class="wrapper">
@@ -67,7 +73,7 @@
                     <ul class="icons disp-flex">
                         <li><a href="basket.html"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
                         <li><a href="wishlist.html"><img class="svg" src="img/heart.svg" alt="heart"></a></li>
-                        <li><a href="#"><img class="svg" src="img/log-in.svg" alt="log-in"></a></li>
+                        <li><a href="#"><img class="svg svg-log-in" src="img/log-in.svg" alt="log-in"></a></li>
                     </ul>
                     <picture class="for-menu-header"><img src="img/burger.svg" alt="burger"></picture>
                 </div>
@@ -93,7 +99,7 @@
                             </ul>
                         </li>
                         <li class="border">
-                            <a href="order.html">
+                            <a href="#">
                                 Computers
                                 <img class="svg-rotate" src="img/arrow.svg" alt="arrow">
                             </a>
@@ -255,18 +261,15 @@
                         <p class="standart-text text-for-input-basket">Promo code</p>
                         <div class="position-r promo-input-block">
                             <input class="appearance-none enter-promo standart-text" type="text" name="enter-promo"
-                                id="enter-promo">
-                            <label class="standart-text enter-promo-label grey-text position-a" for="enter-promo">Enter
-                                your
-                                promo code</label>
+                                id="enter-promo" placeholder="Enter your promo code">
+                            <label class="standart-text enter-promo-label grey-text position-a" for="enter-promo"></label>
                         </div>
                         <p class="standart-text text-for-input-basket text-for-input-basket-second">Bonus card number
                         </p>
                         <div class="position-r promo-input-block">
                             <input class="appearance-none enter-promo standart-text" type="number"
-                                name="enter-number-phone" id="enter-number-phone">
-                            <label class="standart-text enter-promo-label grey-text position-a"
-                                for="enter-number-phone">Enter your bonus card number</label>
+                                name="enter-number-phone" id="enter-number-phone"  placeholder="Enter your bonus card number">
+                            <label class="standart-text enter-promo-label grey-text position-a" for="enter-number-phone"></label>
                         </div>
                         <div class="disp-flex space-beetwen padding-from-head">
                             <h2 class="head-input-basket-second head-input-basket">
@@ -289,7 +292,7 @@
                             <p class="price-input-basket head-input-basket-second head-input-basket">$4080</p>
                         </div>
                         <div>
-                            <button href="order.html" class="appearance-none checkout-btn" type="submit" id="checkout">Checkout</button>
+                            <a href="order.html" class="appearance-none checkout-btn">Checkout</a>
                         </div>
                     </div>
                 </form>

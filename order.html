@@ -7,6 +7,11 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>Complete your order with E-com Cyber</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -141,7 +146,7 @@
                 </div>
                 <div class="grid-delivery">
                     <div class="position-r">
-                        <input class="appearance input-delivery position-r" type="radio" id="ukr">
+                        <input class="appearance input-delivery position-r" name="delivery" type="radio" id="ukr">
                         <picture class="position-a img-ukr-poshta">
                             <img src="img/ukr-delivery.png" alt="ukr-pochta">
                         </picture>
@@ -149,14 +154,14 @@
                         </label>
                     </div>
                     <div class="position-r">
-                        <input class="appearance input-delivery position-r" type="radio" id="nova" checked>
+                        <input class="appearance input-delivery position-r" name="delivery" type="radio" id="nova" checked>
                         <picture class="position-a img-nova-poshta">
                             <img src="img/nova-poshta.png" alt="nova-poshta">
                         </picture>
                         <label for="nova"></label>
                     </div>
                     <div class="position-r">
-                        <input class="appearance input-delivery position-r" type="radio" id="curier">
+                        <input class="appearance input-delivery position-r" type="radio" id="curier" name="delivery">
                         <div class="disp-flex courier-flex position-a">
                             <img class="svg-delivery" src="img/delivery.svg" alt="delivery">
                             <div>
@@ -181,15 +186,15 @@
                 </div>
                 <h2 class="main-head-order">Payment method</h2>
                 <div class="grid-delivery">
-                    <div class="disp-flex"><input class="appearance order-input" type="radio" id="bank"><label class="text-payment" for="bank">Bank transfer</label></div>
-                    <div class="disp-flex"><input class="appearance order-input" type="radio" id="cash"><label class="text-payment" for="cash">Cash on delivery</label></div>
-                    <div class="disp-flex"><input class="appearance order-input" type="radio" id="ligpay"><label class="text-payment" for="ligpay">LigPay</label></div>
+                    <div class="disp-flex"><input class="appearance order-input" name="payment" type="radio" id="bank"><label class="text-payment" for="bank">Bank transfer</label></div>
+                    <div class="disp-flex"><input class="appearance order-input" name="payment" type="radio" id="cash"><label class="text-payment" for="cash">Cash on delivery</label></div>
+                    <div class="disp-flex"><input class="appearance order-input" name="payment" type="radio" id="ligpay"><label class="text-payment" for="ligpay">LigPay</label></div>
                 </div>
                 <p class="text-order comment-head">Comment</p>
                 <textarea class="comment appearance" name="comment" id="comment" placeholder="Leave your comment"></textarea>
                 <div class="wrapper">
                     <div class="grid-btns-order">
-                        <button class="appearance button-or button-or-white" type="reset">Back to basket</button>
+                        <a href="basket.html" class="appearance button-or button-or-white">Back to basket</a>
                         <button class="appearance button-or button-or-black" type="submit">Confirm</button>
                     </div>
                 </div>

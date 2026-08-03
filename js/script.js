@@ -11,7 +11,21 @@ const dark = document.querySelector(".dark-bgc"),
     search = document.querySelector(".search-mobile"),
     photoBtn = document.querySelectorAll(".buttons-for-img-change"),
     buttons = document.querySelectorAll(".button-switch"),
-    blocks = document.querySelectorAll(".block-reg")
+    blocks = document.querySelectorAll(".block-reg"),
+    popup = document.querySelector(".popup"),
+    summonpopup = document.querySelector(".svg-log-in")
+
+if (popup) {
+    summonpopup.addEventListener("click", function () {
+        popup.style.left = "50%"
+        dark.style.display = "block"
+    })
+
+    function cancelPopup() {
+        popup.style.left = "-200%";
+    }
+
+}
 
 if (filter) {
     filter.addEventListener("click", function () {
@@ -22,14 +36,18 @@ if (filter) {
 
     function cancelFilter() {
         filters.style.left = "-200%";
-        dark.style.display = "none"
+        dark.style.display = "none";
     }
+    canfilter.addEventListener("click", cancelFilter)
 }
 
 buttons.forEach(button => {
-    button.onclick = () => {
+    button.onclick = (e) => {
+        buttons.forEach(b => b.classList.remove("active"))
+        console.log(e.target)
+        e.target.classList.add("active")
         blocks.forEach(block => {
-            block.classlist.remove("active")
+            block.classList.remove("active")
             if (block.classList.contains(button.dataset.reg)) {
                 if (!block.classList.contains("active")) {
                     block.classList.add("active")
@@ -38,6 +56,7 @@ buttons.forEach(button => {
         })
     }
 })
+
 
 item.addEventListener("click", function () {
     list.style.top = "100%"
@@ -58,6 +77,7 @@ photoBtn.forEach(item => {
     }
 })
 
+
 function cancelBurger() {
     menu.style.left = "-100%";
     dark.style.display = "none"
@@ -66,4 +86,4 @@ function cancelBurger() {
 cancel.addEventListener("click", cancelBurger);
 dark.addEventListener("click", cancelBurger);
 dark.addEventListener("click", cancelFilter);
-canfilter.addEventListener("click", cancelFilter)
+dark.addEventListener("click", cancelPopup);
