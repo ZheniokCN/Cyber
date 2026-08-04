@@ -12,19 +12,20 @@ const dark = document.querySelector(".dark-bgc"),
     photoBtn = document.querySelectorAll(".buttons-for-img-change"),
     buttons = document.querySelectorAll(".button-switch"),
     blocks = document.querySelectorAll(".block-reg"),
-    popup = document.querySelector(".popup"),
-    summonpopup = document.querySelector(".svg-log-in")
+    popup = document.querySelector(".main-div-in-popup"),
+    summonpopup = document.querySelector(".svg-log-in"),
+    closepopup = document.querySelector(".closepopup")
 
 if (popup) {
+    function cancelPopup() {
+        popup.style.left = "-200%";
+        dark.style.display = "none";
+    }
+    
     summonpopup.addEventListener("click", function () {
         popup.style.left = "50%"
         dark.style.display = "block"
     })
-
-    function cancelPopup() {
-        popup.style.left = "-200%";
-    }
-
 }
 
 if (filter) {
@@ -73,7 +74,9 @@ burger.addEventListener("click", function () {
 photoBtn.forEach(item => {
     item.onclick = () => {
         let imgSrc = item.getAttribute("data-img")
-        imgCont.setAttribute("src", imgSrc)
+        imgContBig.setAttribute("src", imgSrc)
+        imgConFirst.setAttribute("src", imgSrc)
+        imgContSecond.setAttribute("src", imgSrc)
     }
 })
 
@@ -87,3 +90,4 @@ cancel.addEventListener("click", cancelBurger);
 dark.addEventListener("click", cancelBurger);
 dark.addEventListener("click", cancelFilter);
 dark.addEventListener("click", cancelPopup);
+closepopup.addEventListener("click", cancelPopup);

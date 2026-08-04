@@ -16,6 +16,40 @@
 
 <body>
     <div class="dark-bgc"></div>
+    <div class="main-div-in-popup">
+        <img src="img/closepopup.svg" alt="close popup" class="closepopup">
+        <div class="popup">
+            <div class="grid-button-popup">
+                <a class="button-switch active" data-reg="singIn" href="#">Log in</a>
+                <a class="button-switch" data-reg="singUp" href="#">Sing up</a>
+            </div>
+            <form action="#" method="post">
+                <div class="singIn block-reg active">
+                    <div class="padding-bottom-20rem"><label class="label-popup" for="EmailPhone">E-mail or phone</label>
+                    <input class="appearance input-popup" type="text" name="EmailPhone" id="EmailPhone" placeholder="Enter your email or phone"></div>
+                    <div class="padding-bottom-17rem"><label class="label-popup" for="password">Password</label>
+                    <input class="appearance input-popup" type="password" name="password" id="password" placeholder="*********"></div>
+                    <a class="grey-text forgot-password disp-block" href="#">Forgot password?</a>
+                    <button type="submit" class="button-popup disp-block">Log in</button>
+                </div>
+            </form>
+            <form action="#" method="post">
+                <div class="singUp block-reg">
+                    <div class="padding-bottom-20rem"><label class="label-popup" for="firstName">First name</label>
+                    <input class="appearance input-popup" type="text" name="EmailPhone" id="firstName" placeholder="Enter your first name"></div>
+                    <div class="padding-bottom-20rem"><label class="label-popup" for="second-name">second name</label>
+                    <input class="appearance input-popup" type="text" name="EmailPhone" id="second-name" placeholder="Enter your second name"></div>
+                    <div class="padding-bottom-20rem"><label class="label-popup" for="EmailPhone">E-mail or phone</label>
+                    <input class="appearance input-popup" type="text" name="EmailPhone" id="EmailPhone" placeholder="Enter your email or phone"></div>
+                    <div class="padding-bottom-20rem"><label class="label-popup" for="password">Password</label>
+                    <input class="appearance input-popup" type="password" name="password" id="password" placeholder="*********"></div>
+                    <div class="padding-bottom-30rem"><label class="label-popup" for="repeat-password">Repeat password</label>
+                    <input class="appearance input-popup" type="password" name="repeat-password" id="repeat-password" placeholder="*********"></div>
+                    <button type="submit" class="button-popup disp-block">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <header class="header">
         <nav class="wrapper">
             <div class="for-aling-items">
@@ -46,7 +80,7 @@
                     <ul class="icons disp-flex">
                         <li><a href="basket.html"><img class="svg" src="img/shop-cart.svg" alt="cart"></a></li>
                         <li><a href="wishlist.html"><img class="svg" src="img/heart.svg" alt="heart"></a></li>
-                        <li><a href="#"><img class="svg" src="img/log-in.svg" alt="log-in"></a></li>
+                        <li><a href="#"><img class="svg svg-log-in" src="img/log-in.svg" alt="log-in"></a></li>
                     </ul>
                     <picture class="for-menu-header"><img src="img/burger.svg" alt="burger"></picture>
                 </div>
