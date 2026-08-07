@@ -180,24 +180,17 @@
                 </div>
                 <div class="grid-delivery">
                     <div class="position-r">
-                        <input class="appearance input-delivery position-r" name="delivery" type="radio" id="ukr">
-                        <picture class="position-a img-ukr-poshta">
-                            <img src="img/ukr-delivery.png" alt="ukr-pochta">
-                        </picture>
+                        <input class="appearance input-delivery ukr position-r" name="delivery" type="radio" id="ukr">
                         <label for="ukr">
                         </label>
                     </div>
                     <div class="position-r">
-                        <input class="appearance input-delivery position-r" name="delivery" type="radio" id="nova" checked>
-                        <picture class="position-a img-nova-poshta">
-                            <img src="img/nova-poshta.png" alt="nova-poshta">
-                        </picture>
+                        <input class="appearance input-delivery nova position-r" name="delivery" type="radio" id="nova" checked>
                         <label for="nova"></label>
                     </div>
                     <div class="position-r">
-                        <input class="appearance input-delivery position-r" type="radio" id="curier" name="delivery">
+                        <input class="appearance input-delivery deliv position-r" type="radio" id="curier" name="delivery">
                         <div class="disp-flex courier-flex position-a">
-                            <img class="svg-delivery" src="img/delivery.svg" alt="delivery">
                             <div>
                                 <p class="bold-text-courier">Courier</p>
                                 <p class="text-courier">delivery</p>
@@ -245,7 +238,7 @@
                     </div>
                 </div>
                 <h2 class="main-head-order">Payment method</h2>
-                <div class="grid-delivery">
+                <div class="grid-payment">
                     <div class="disp-flex border-payment position-r"><input class="appearance order-input" name="payment" type="radio" id="bank"><p class="text-payment">Bank transfer</p><label class="position-a mask-label" for="bank"></label></div>
                     <div class="disp-flex border-payment position-r"><input class="appearance order-input" name="payment" type="radio" id="cash"><p class="text-payment">Cash on delivery</p><label class="position-a mask-label" for="cash"></label></div>
                     <div class="disp-flex border-payment position-r"><input class="appearance order-input" name="payment" type="radio" id="ligpay"><p class="text-payment">LigPay</p><label class="position-a mask-label" for="ligpay"></label></div>

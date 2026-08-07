@@ -74,9 +74,11 @@ burger.addEventListener("click", function () {
 photoBtn.forEach(item => {
     item.onclick = () => {
         let imgSrc = item.getAttribute("data-img")
+        let imgSrcSecond = item.getAttribute("data-imgSecond")
+        let imgSrcThird = item.getAttribute("data-imgThird")
         imgContBig.setAttribute("src", imgSrc)
-        imgConFirst.setAttribute("src", imgSrc)
-        imgContSecond.setAttribute("src", imgSrc)
+        imgContFirst.setAttribute("src", imgSrcThird)
+        imgContSecond.setAttribute("src", imgSrcSecond)
     }
 })
 

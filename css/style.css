@@ -1591,12 +1591,15 @@ a {
 .img-container-one img {
     aspect-ratio: 163/239;
     object-fit: contain;
+    background: none;
+    min-width: 15vw;
 }
 
 .img-container img,
 .img-container-two img {
     max-height: 272rem;
     object-fit: contain;
+    background: none;
 }
 
 .head-product {
@@ -2272,8 +2275,7 @@ a {
 /* order */
 .grid-details {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 20rem;
     row-gap: 15rem;
     padding-bottom: 30rem;
@@ -2314,33 +2316,37 @@ a {
     padding-bottom: 24rem;
 }
 
+.grid-payment {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20rem;
+    padding-bottom: 24rem;
+}
+
 .input-delivery {
     width: 100%;
     min-height: 100rem;
     box-sizing: border-box;
     border-radius: 5px;
     background: #F1F1F1;
-    padding: 15rem 46rem;
+    min-height: 120rem;
+    padding: 10rem;
 }
 
 .input-delivery:checked {
     border: 1px solid #9F9F9F;
 }
 
-.img-ukr-poshta,
-.img-nova-poshta {
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    z-index: 2;
-    width: 60%;
+.nova {
+    background: #F1F1F1 url(../img/nova-poshta.png) no-repeat center center / contain;
+    background-origin: content-box;
+    padding: 10rem 15rem;
 }
 
-.img-ukr-poshta img,
-.img-nova-poshta img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.ukr {
+    background: #F1F1F1 url(../img/ukr-delivery.png) no-repeat center center / contain;
+    background-origin: content-box;
+    padding: 10rem 15rem;
 }
 
 .bold-text-courier {
@@ -2430,7 +2436,7 @@ a {
 
 .grid-btns-order {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20rem;
     padding: 40rem 0 101rem;
 }
@@ -2520,6 +2526,18 @@ a {
         grid-column: 3 / 5;
     }
 
+    .grid-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-payment {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-btns-order {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .apple-airpods-block {
         border-top: 1px solid transparent;
         border-bottom: 1px solid transparent;
@@ -2541,6 +2559,14 @@ a {
 
     .wrapper-pr {
         max-width: 1429px;
+    }
+
+    .ukr {
+        padding: 24rem 41rem;
+    }
+
+    .nova {
+        padding: 15rem 46rem;
     }
 }
 
@@ -2570,10 +2596,6 @@ a {
     .container {
         flex-wrap: nowrap;
         align-items: center;
-    }
-
-    .grid-conteiner {
-        max-width: 55%;
     }
 
     .info-container {
@@ -2772,6 +2794,10 @@ a {
 @media screen and (min-width:2000px) {
     html {
         font-size: 1px;
+    }
+
+    .img-container-one img {
+        min-width: 10`vw;
     }
 }
 
