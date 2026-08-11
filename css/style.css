@@ -2456,6 +2456,7 @@ a {
     border-radius: 5rem;
     border: 1px solid var(--gray-middle, #9F9F9F);
     font-family: "Fixel Display";
+    resize: none;
 }
 
 .comment-head {
