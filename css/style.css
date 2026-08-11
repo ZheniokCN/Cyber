@@ -2108,6 +2108,11 @@ a {
     border-radius: 7rem;
 }
 
+.button-submit-basket:hover{
+    border: 1px solid #000;
+    color: #000;
+}
+
 .input-basket,
 .label-basket {
     background-color: #F1F1F1;
