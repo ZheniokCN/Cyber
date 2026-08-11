@@ -19,7 +19,8 @@ const dark = document.querySelector(".dark-bgc"),
     popupPicture = document.querySelector(".popup-pictures"),
     figuresMain = document.querySelector(".figures_main-page"),
     figuresDiscart = document.querySelector(".discounts-figures"),
-    figuresCatalog = document.querySelector(".figures-catalog")
+    figuresCatalog = document.querySelector(".figures-catalog"),
+    closepicture = document.querySelector(".close-popup-picture")
 
 if (popup) {
     function cancelPopup() {
@@ -64,6 +65,7 @@ buttons.forEach(button => {
 })
 
 
+
 item.addEventListener("click", function () {
     list.style.top = "100%"
     list.style.opacity = "1"
@@ -76,7 +78,7 @@ burger.addEventListener("click", function () {
     dark.style.display = "block"
 })
 
-if(figuresMain || figuresDiscart || figuresCatalog) {
+if(popupPicture) {
     imgFigure.forEach(Image => {
         Image.onclick = () => {
             let pictureSrc = Image.getAttribute("data-picture")
@@ -114,3 +116,4 @@ dark.addEventListener("click", cancelFilter);
 dark.addEventListener("click", cancelPopup);
 dark.addEventListener("click", cancelScaling);
 closepopup.addEventListener("click", cancelPopup);
+closepicture.addEventListener("click", cancelScaling);
